@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create Account | Reception Training</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="h1">Create Account</div>
+      <div class="sub">Your account will be pending until admin approval.</div>
+
+      <form id="createForm">
+        <label for="newUsername">Username</label>
+        <input id="newUsername" name="newUsername" type="text" placeholder="Example: Trainee_02" autocomplete="username" required />
+
+        <label for="newPassword">Password</label>
+        <input id="newPassword" name="newPassword" type="password" placeholder="Minimum 6 characters" autocomplete="new-password" required />
+
+        <button class="btnPrimary" type="submit">Request Account</button>
+      </form>
+
+      <div class="links">
+        <a href="login.html">Back to Login</a>
+      </div>
+
+      <div id="msg" class="msg" role="status" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+  <script src="create-account.js"></script>
+</body>
+</html>
