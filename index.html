@@ -18,7 +18,7 @@
 <header class="topbar">
   <div class="brand">
     <span class="brandIcon" aria-hidden="true">
-      <svg viewBox="0 0 24 24" class="icon iconBrand" aria-hidden="true">
+      <svg viewBox="0 0 24 24" class="icon iconBrand">
         <path d="M7 22V3h10v19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M5 22h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
         <path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
@@ -81,7 +81,7 @@
   <main class="content">
     <div id="searchMeta" class="searchMeta"></div>
 
-    <!-- WELCOME "PAGE" -->
+    <!-- ✅ WELCOME "PAGE" (shows first; disappears after clicking a process) -->
     <section id="welcomePage" class="card" style="margin-bottom:32px">
       <h2>Welcome to Azzurro!</h2>
 
@@ -103,361 +103,2895 @@
         If anything is unclear, please raise your questions with your team leader or trainer.
       </p>
 
-      <p>We’re excited to have you onboard. Let’s get started.</p>
+      <p>
+        We’re excited to have you onboard. Let’s get started.
+      </p>
     </section>
 
     <!-- =====================
          TRAINING CONTENT
+         Each section MUST have data-process-id for permissions
     ====================== -->
 
     <section class="docSection" data-process-id="Welcome" data-nav-group="onboarding" data-tags="overview first day greeting basics" data-title="Staff Onboarding Module">
       <h2>Staff Onboarding Module</h2>
-
       <div class="card">
         <h2>Welcome to Azzurro Hotels!</h2>
-        <h3>Module Purpose</h3>
-        <p>This onboarding module introduces new team members to:</p>
+		<h3>Module Purpose</h3>
+		<p>This onboarding module introduces new team members to:</p>
         <ul>
           <li>How Azzurro Hotels operates.</li>
           <li>Our self check-in accommodation model.</li>
           <li>The difference between <b>Front-of-House</b> and <b>Back-Office roles</b>.</li>
-          <li>How teams work together to deliver a consistent guest experience.</li>
+		  <li>How teams work together to deliver a consistent guest experience</li>
         </ul>
-        <p>By the end of this module, you should understand <b>your role, your responsibilities</b>, and <b>how your work supports guests and other team members</b>.</p>
+		<p>By the end of this module, you should understand <b>your role, your responsibilities</b>, and <b>how your work supports guests and other team members</b>.</p>
       </div>
-
-      <details class="accordion" id="onb-01" data-title="Step-by-step checklist"
-               data-keywords="About Azzurro Hotels operates modern pod hostels and serviced accommodation across Australia. Our properties are designed for efficient contactless stays self check-in Airbnb style">
-        <summary>1. About Azzurro Hotels</summary>
-        <div class="card">
-          <p>Azzurro Hotels operates modern pod hostels and serviced accommodation across Australia.
-          Our properties are designed for <b>efficient, contactless stays</b>, using technology and automation rather than traditional onsite reception desks.</p>
-
-          <p>We operate using a <b>self check-in (Airbnb-style)</b> model, where:</p>
+	  
+	  
+	  <details class="accordion" id="accordion-01"
+               data-title="Step-by-step checklist"
+               data-keywords="About Azzurro Hotels operates modern pod hostels and serviced accommodation across Australia.
+			   Our properties are designed for efficient contactless stays self check-in Airbnb style">
+		<summary>1. About Azzurro Hotels</summary>
+	  <div class="card">
+		<p>Azzurro Hotels operates modern pod hostels and serviced accommodation across Australia.
+		Our properties are designed for <b>efficient, contactless stays</b>, using technology and automation rather than traditional onsite reception desks.</p>
+		
+		<p>We operate using a <b>self check-in (Airbnb-style)</b> model, where:</p>
+	
           <ul>
             <li>Guests check in online before arrival</li>
             <li>Access is provided via secure door codes</li>
             <li>There is no physical front desk</li>
             <li>Guest support is provided remotely by our virtual reception team</li>
           </ul>
-          <p>This model allows us to offer flexibility to guests while maintaining consistent service standards across all properties.</p>
-        </div>
-      </details>
+		<p>This model allows us to offer flexibility to guests while maintaining consistent service standards across all properties.</p>
+       </div>
+		</details>
 
-      <details class="accordion" id="onb-02" data-title="Properties" data-keywords="Our Operating Model How Things Work Principles Onsite staff">
-        <summary>2. Properties</summary>
-        <div class="card">
+		<details class="accordion" id="accordion-02"
+               data-title="Step-by-step checklist"
+               data-keywords="Our Operating Model How Things Work Principles Onsite staff">
+		<summary>2. Properties</summary>
+	  <div class="card">	
           <ul>
-            <li><b>Potts Point</b> - 141-143 Victoria St. Potts Point, NSW. 2-3 mins walk from King’s Cross Station. Beige, Black and White Theme. Backyard with Harbor View, Laundry, Onsite Receptionist. All rooms have common bathrooms.</li>
-            <li><b>Central Sydney</b> - 90 Wentworth Ave, Surry Hills, NSW. Close to Central & Museum Station (4-5 mins walk). Islander theme furniture with green kitchen. No luggage area (They can leave their luggages in Surry Hills) | Busy street outside.</li>
-            <li><b>Surry Hills</b> - 82 Flinders St. Darlinghurst, NSW. Mixed property, some female-only rooms. Marble bathroom, calming modern vibe. Luggage area near kitchen with code 1234. Quiet neighborhood.</li>
-            <li><b>Darling Harbour</b> - 22 Allen St. Pyrmont, NSW. Biggest property with most beds. Private rooms only, family rooms available. Close to convention station, Cloud Beds central system.</li>
-            <li><b>The Pyrmont Budget Hotel</b> - 11 Pyrmont Ave, Pyrmont, NSW. Close to Convention Station (7 mins walk) & Pyrmont Bay Station (3 mins walk). Mostly private rooms. No luggage area | No Breakfast and Dinner.</li>
+            <li><b>Potts Point</b> - 141-143 Victoria St. Potts Point, NSW.
+					2-3 mins walk from King’s Cross Station.
+					Beige, Black and White Theme.
+					Backyard with Harbor View, Laundry, Onsite Receptionist.
+					All rooms have common bathrooms.</li>
+			<li><b>Central SydneyCentral Sydney</b> - 90 Wentworth Ave, Surry Hills, NSW.
+					Close to Central & Museum Station (4-5 mins walk).
+					Islander theme furniture with green kitchen.
+					No luggage area (They can leave their luggages in Surry Hills) | Busy street outside.</li>
+			<li><b>Surry Hills</b> - 82 Flinders St. Darlinghurst, NSW.
+					Mixed property, some female-only rooms.
+					Marble bathroom, calming modern vibe.
+					Luggage area near kitchen with code 1234.
+					Quiet neighborhood.</li>
+			<li><b>Darling Harbour</b> - 22 Allen St. Pyrmont, NSW.
+					Biggest property with most beds.
+					Private rooms only, family rooms available.
+					Close to convention station, Cloud Beds central system.</li>
+			<li><b>The Pyrmont Budget Hotel</b> - 11 Pyrmont Ave, Pyrmont, NSW.
+					Close to Convention Station (7 mins walk) & Pyrmont Bay Station (3 mins walk).
+					Mostly private rooms.
+					No luggage area | No Breakfast and Dinner.</li>
           </ul>
-        </div>
-      </details>
+       </div>
+		</details>
 
-      <details class="accordion" id="onb-03" data-title="Our Operating Model" data-keywords="Our Operating Model How Things Work Principles Onsite staff">
-        <summary>3. Our Operating Model (How Things Work)</summary>
-        <div class="card">
-          <p><b>Key Principles</b></p>
+		
+		
+		<details class="accordion" id="accordion-03"
+               data-title="Step-by-step checklist"
+               data-keywords="Our Operating Model How Things Work Principles Onsite staff">
+		<summary>3. Our Operating Model (How Things Work)</summary>
+	  <div class="card">
+		<p><b>Key Principles</b></p>	
           <ul>
             <li><b>24-hour self check-in</b> for guests</li>
-            <li><b>Check-in time starts from 3:00 PM</b></li>
-            <li>Access codes <b>activate from 3:00 PM onwards only</b></li>
-            <li>Guest communication is handled <b>remotely</b></li>
-            <li>Onsite staff (e.g. cleaners) <b>do not</b> handle check-in</li>
+			<li><b>Check-in time starts from 3:00 PM</li>
+			<li>Access codes <b>activate from 3:00 PM onwards only</li>
+			<li>Guest communication is handled <b>remotely</li>
+			<li>Onsite staff (e.g. cleaners) <b>do not</b> handle check-in</li>
           </ul>
-          <p>Clear communication and system accuracy are critical to prevent guest confusion.</p>
-        </div>
-      </details>
-
-      <details class="accordion" id="onb-04" data-title="Front of House" data-keywords="Front of House Guest Facing Roles">
-        <summary>4. Front-of-House Staff (Guest-Facing Roles)</summary>
-        <div class="card">
-          <p>Front-of-House staff are responsible for <b>direct guest communication and support, delivered remotely.</b></p>
-          <h3>Your Responsibilities</h3>
+		<p>Clear communication and system accuracy are critical to prevent guest confusion.</p>
+       </div>
+		</details>
+		
+		<details class="accordion" id="accordion-04"
+               data-title="Step-by-step checklist"
+               data-keywords="Front of House Guest Facing Roles">
+		<summary>4. Front-of-House Staff (Guest-Facing Roles)</summary>
+	  <div class="card">
+		<p>Front-of-House staff are responsible for <b>direct guest communication and support, delivered remotely.</b></p>
+		<h3>Your Responsibilities</h3>	
           <ul>
             <li>Respond to guest enquiries via:
-              <ul>
-                <li>SMS</li>
-                <li>Email</li>
-                <li>Phone</li>
-              </ul>
-            </li>
-            <li>Assist guests with:
-              <ul>
-                <li>Online check-in</li>
-                <li>Access codes</li>
-                <li>Room or bed details</li>
-                <li>General stay questions</li>
-              </ul>
-            </li>
-            <li>Escalate issues when required, following SOPs</li>
+<ul>
+				<li>SMS</li>
+				<li>Email</li>
+				<li>Phone</li>
+				</ul>
+</li>
+			<li>Assist guests with:
+<ul>
+				<li>Online check-in</li>
+				<li>Access codes</li>
+				<li>Room or bed details</li>
+				<li>General stay questions</li>
+				</ul>
+</li>
+			<li>Escalate issues when required, following SOPs</li>
           </ul>
-
-          <h3>What Success Looks Like</h3>
-          <ul>
+		<h3>What Success Looks Like</h3>
+		  <ul>
             <li>Guests understand the process before arrival</li>
-            <li>Fewer access-related complaints</li>
-            <li>Calm, clear, professional communication at all times</li>
+			<li>Fewer access-related complaints</li>
+			<li>Calm, clear, professional communication at all times</li>
           </ul>
-          <p>You are the <b>voice of Azzurro Hotels</b> to our guests.</p>
-        </div>
-      </details>
-
-      <details class="accordion" id="onb-05" data-title="Back Office" data-keywords="Back Office Staff behind the scenes managing systems data processes process">
-        <summary>5. Back-Office Staff (Operations & Systems Roles)</summary>
-        <div class="card">
-          <p>Back-Office staff support the guest experience <b>behind the scenes</b> by managing systems, data, and processes.</p>
-          <h3>Your Responsibilities</h3>
+		 <p>You are the <b>voice of Azzurro Hotels</b> to our guests.</p>
+       </div>
+		</details>
+		
+		<details class="accordion" id="accordion-05"
+               data-title="Step-by-step checklist"
+               data-keywords="Back Office Staff behind the scenes managing systems data processes process">
+		<summary>5. Back-Office Staff (Operations & Systems Roles)</summary>
+	  <div class="card">
+		<p>Back-Office staff support the guest experience  <b>behind the scenes</b> by managing systems, data, and processes.</p>
+		<h3>Your Responsibilities</h3>	
           <ul>
             <li>Maintain booking and property systems</li>
-            <li>Manage and update:
-              <ul>
-                <li>Automated message templates</li>
-                <li>Check-in workflows</li>
-                <li>SOPs and training materials</li>
-              </ul>
-            </li>
-            <li>Monitor integrations (reservations, messaging, access codes)</li>
-            <li>Ensure information used by Front-of-House staff is accurate and current</li>
-            <li>Support escalation and issue resolution</li>
+			<li>Manage and update:
+<ul>
+				<li>Automated message templates</li>
+				<li>Check-in workflows</li>
+				<li>SOPs and training materials</li>
+				</ul>
+</li>
+			<li>Monitor integrations (reservations, messaging, access codes)</li>
+			<li>Ensure information used by Front-of-House staff is accurate and current</li>
+			<li>Support escalation and issue resolution</li>
           </ul>
-          <h3>What Success Looks Like</h3>
-          <ul>
+		<h3>What Success Looks Like</h3>
+		  <ul>
             <li>Systems run smoothly with minimal manual intervention</li>
-            <li>Messaging is clear, consistent, and approved</li>
-            <li>Front-of-House teams have the information they need to support guests confidently</li>
+			<li>Messaging is clear, consistent, and approved</li>
+			<li>Front-of-House teams have the information they need to support guests confidently</li>
           </ul>
-          <p>Back-Office work ensures <b>consistency and reliability</b> across all properties.</p>
-        </div>
-      </details>
-
-      <details class="accordion" id="onb-06" data-title="How Teams Work Together" data-keywords="How Teams Work Together">
-        <summary>6. How Teams Work Together</summary>
-        <div class="card">
-          <p>At Azzurro Hotels, guest experience depends on <b>strong alignment between teams</b>.</p>
+		 <p>Back-Office work ensures <b>consistency and reliability</b> across all properties.</p>
+       </div>
+		</details>
+		
+		<details class="accordion" id="accordion-06"
+               data-title="Step-by-step checklist"
+               data-keywords="How Teams Work Together">
+		<summary>6. How Teams Work Together</summary>
+	  <div class="card">
+		<p>At Azzurro Hotels, guest experience depends on <b>strong alignment between teams</b></p>
           <ul>
             <li>Back-Office builds and maintains systems</li>
-            <li>Front-of-House delivers the guest experience</li>
-            <li>SOPs ensure everyone follows the same standards</li>
+			<li>Front-of-House delivers the guest experience</li>
+			<li>SOPs ensure everyone follows the same standards</li>
           </ul>
-          <p>When systems and communication are aligned, guests experience a smooth, stress-free stay.</p>
-        </div>
-      </details>
-
-      <details class="accordion" id="onb-07" data-title="Key Expectations for All Staff" data-keywords="Key Expectations for All Staff All team members are expected to">
-        <summary>7. Key Expectations for All Staff</summary>
-        <div class="card">
-          <h3>All team members are expected to:</h3>
+		<p>When systems and communication are aligned, guests experience a smooth, stress-free stay.</p>
+       </div>
+		</details>
+		
+		<details class="accordion" id="accordion-07"
+               data-title="Step-by-step checklist"
+               data-keywords="Key Expectations for All Staff All team members are expected to">
+		<summary>7. Key Expectations for All Staff</summary>
+	  <div class="card">
+		<h3>All team members are expected to:</h3>	
           <ul>
             <li>Follow approved SOPs and templates</li>
-            <li>Communicate clearly and professionally</li>
-            <li>Avoid giving guests conflicting information</li>
-            <li>Escalate issues rather than improvising</li>
-            <li>Maintain a consistent brand voice</li>
+			<li>Communicate clearly and professionally</li>
+			<li>Avoid giving guests conflicting information</li>
+			<li>Escalate issues rather than improvising</li>
+			<li>Maintain a consistent brand voice</li>
           </ul>
-          <p>Consistency protects both <b>guest experience</b> and <b>team efficiency</b>.</p>
-        </div>
-      </details>
-
-      <details class="accordion" id="onb-08" data-title="Next Steps" data-keywords="After completing this module">
-        <summary>8. Next Steps</summary>
-        <div class="card">
-          <h3>After completing this module, you will:</h3>
+		<p>Consistency protects both <b>guest experience</b> and <b>team efficiency</b>.</p>
+		</details>
+		
+		<details class="accordion" id="accordion-08"
+               data-title="Step-by-step checklist"
+               data-keywords="After completing this module ">
+		<summary>8. Next Steps</summary>
+	  <div class="card">
+		<h3>After completing this module, you will:</h3>	
           <ul>
             <li>Be introduced to the tools</li>
-            <li>Learn the function of the tools</li>
-            <li>Review role-specific SOPs</li>
-            <li>Learn the guest journey in detail</li>
-            <li>Be trained on the systems relevant to your role</li>
+			<li>Learn the function of the tools</li>
+			<li>Review role-specific SOPs</li>
+			<li>Learn the guest journey in detail</li>
+			<li>Be trained on the systems relevant to your role</li>
           </ul>
-          <p>If you are unsure about any process, <b>ask before acting</b>.</p>
-        </div>
-      </details>
+		<p>If you are unsure about any process, <b>ask before acting</b>.</p>
+		</details>
+		
     </section>
+	
+	<section class="docSection" data-process-id="Welcome-2" data-nav-group="onboarding" data-tags="Training Schedule" data-title="Training Schedule">
+      <h2>Training Schedule</h2>
+      <div class="card">
+        <h1>Virtual Reception Comprehensive Training Program</h1>
+		<h3>Goal</h3>
+		<p>To train Virtual Reception staff to independently manage all reception-related tasks with little to no supervision,
+		confidently handle day-to-day operational issues, and de-escalate guest concerns professionally.</p>
+		<h3>Program Overview</h3>
+			<ul>
+				<li><b>Total Duration:</b> 9 Training Days</li>
+				<li><b>Pre-Training Study:</b> 2 days (Self-study)</li>
+				<li><b>Unpaid Training:</b> 5 days</li>
+				<li><b>Paid Training:</b> 4 days</li>
+				<li><b>Elimination Points:</b> Day 1 and Day 4</li>
+			</ul>
+		<h3>PRE-TRAINING PHASE (2 DAYS – SELF-STUDY)</h3>
+		<h4>Requirement (Mandatory)</h4>
+		<p>Before formal training begins, candidates must independently study the comprehensive training materials provided.</p>
+		<h4>Requirement (Mandatory)</h4>
+			<ul>
+				<li>Reception SOPs</li>
+				<li>Company policies & protocols</li>
+				<li>Guest communication standards</li>
+				<li>Escalation matrix</li>
+				<li>Sample complaint and inquiry responses</li>
+				<li>Safety protocols (fire, flood, maintenance)</li>
+			</ul>
+		<h4>Expectations</h4>
+			<ul>
+				<li>Candidates must come prepared</li>
+				<li>No live work or system access</li>
+				<li>Failure to complete the study requirements results in <b>disqualification from training</li>
+			</ul>
+		<h2>ACTUAL TRAINING PHASE</h2>
+		<h3>DAY 1 – Knowledge Assessment (ELIMINATION) – UNPAID</h3>
+		<h4>Purpose</h4>
+		<p>To assess candidates’ understanding of the training materials <b>before proceeding further</b>.</p>
+		<h4>Activities</h4>
+			<ul>
+				<li>Q&A-based assessment</li>
+				<li>Mock check-in scenarios</li>
+				<li>Evaluation based strictly on the provided training materials</li>
+			</ul>
+		<h4>Assessment Focus</h4>
+			<ul>
+				<li>Reception workflows</li>
+				<li>Complaint handling basics</li>
+				<li>Escalation protocols</li>
+				<li>Communication tone and professionalism</li>
+			</ul>
+		<h4>Outcome</h4>
+			<ul>
+				<li><b>Pass</b>: Proceeds to Day 2</li>
+				<li><b>Fail</b>: Eliminated from training</li>
+			</ul>
+		
+		<h3>DAY 2 – Training Tools Discussion – UNPAID</h3>
+		<h4>Purpose</h4>
+		<p>To clarify and align understanding of tools and workflows.</p>
+		<h4>Activities</h4>
+			<ul>
+				<li>Discussion of reception tools and processes</li>
+				<li>Cater to questions from candidates</li>
+				<li>Knowledge check through open Q&A (no elimination)</li>
+			</ul>
+		<h4>Topics Covered</h4>
+			<ul>
+				<li>SOP walkthrough</li>
+				<li>Email handling and labeling logic</li>
+				<li>Notion and documentation usage</li>
+				<li>Proper use of templates and scripts</li>
+			</ul>
+		<h4>Outcome</h4>
+			<ul>
+				<li>Candidates demonstrate clarity on tools and expectations</li>
+			</ul>
+		
+		<h3>DAY 3 – Handling Complaints, Review Gathering & Protocols – UNPAID</h3>
+		<h4>Purpose</h4>
+		<p>To prepare candidates to <b>de-escalate guest concerns</b> and protect the business.</p>
+		<h4>Activities</h4>
+			<ul>
+				<li>Discussion-based session</li>
+				<li>Cater to candidate questions</li>
+				<li>Knowledge check via Q&A (no elimination)</li>
+			</ul>
+		<h4>Topics Covered</h4>
+			<ul>
+				<li>Complaint resolution framework</li>
+				<li>Refund requests (subject to approval)</li>
+				<li>Review gathering etiquette</li>
+				<li>Handling negative feedback professionally</li>
+				<li>What reception can and cannot promise</li>
+			</ul>
+		<h4>Outcome</h4>
+			<ul>
+				<li>Candidates demonstrate calm, policy-aligned responses to common scenarios</li>
+			</ul>
+		
+		<h3>DAY 4 – Competency Check (ELIMINATION) – UNPAID</h3>
+		<h4>Purpose</h4>
+		<p>To verify readiness for <b>system access and live operations</b>.</p>
+		<h4>Activities</h4>
+			<ul>
+				<li>Task execution while sharing screen</li>
+				<li>Candidates given <b>limited system access (Alvin’s access)</li>
+				<li>End-to-end workflow simulation</li>
+			</ul>
+		<h4>Topics Covered</h4>
+			<ul>
+				<li>Complaint handling judgment</li>
+				<li>Escalation accuracy</li>
+				<li>Communication tone</li>
+				<li>SOP and process compliance</li>
+				<li>Tool navigation and task execution</li>
+			</ul>
+		<h4>Scoring</h4>
+			<ul>
+				<li><b>Pass | Needs Improvement | Fail</li>
+				<li><b>One (1) recheck allowed</b> for candidates marked as Needs Improvement</li>
+			</ul>
+		<h4>Outcome</h4>
+			<ul>
+				<li><b>Pass</b>: Proceeds to Day 5</li>
+				<li><b>Fail</b>: Eliminated from training</li>
+			</ul>
+			
+		<h3>DAY 5 – System Access & Company Policies Discussion – UNPAID</h3>
+		<h4>Purpose</h4>
+		<p>To formally introduce system access and reinforce company rules before live work.</b>.</p>
+		<h4>Activities</h4>
+			<ul>
+				<li>System access granted to successful candidates</li>
+				<li>Discussion of company policies and protocols</li>
+				<li>Review of confidentiality, compliance, and accountability</li>
+				<li>Clarification of reception authority limits</li>
+			</ul>
+		<h4>Outcome</h4>
+			<ul>
+				<li>Candidates understand responsibilities, boundaries, and expectations before paid shifts</li>
+			</ul>
+		
+		<h2>PAID TRAINING PHASE (LIVE OPERATIONS)</h2>
+		
+		<h3>DAY 6 – Shadowing (AM Shift) – PAID</h3>
+		<h4>Duration</h4>
+			<ul>
+				<li>3.5 hours shadowing</li>
+				<li>30-minute review session</li>
+			</ul>
+		<h4>Activities</h4>
+			<ul>
+				<li>Observe senior staff handling live reception</li>
+				<li>Take notes on workflows and responses</li>
+				<li>Post-shadow discussion:
+<ul>
+						<li>What went well</li>
+						<li>Any “off-the-book” processes observed</li>
+					</ul>
+</li>
+			</ul>
+		<h4>Outcome</h4>
+			<ul>
+				<li>Trainer documents gaps and corrective actions</li>
+			</ul>
+		
+		<h3>DAY 7 – Shadowing (PM Shift) – PAID</h3>
+		<h4>Duration</h4>
+			<ul>
+				<li>3.5 hours shadowing</li>
+				<li>30-minute review session</li>
+			</ul>
+		<h4>Activities</h4>
+			<ul>
+				<li>Exposure to higher-pressure scenarios</li>
+				<li>Reinforce consistency across shifts</li>
+			</ul>
+		<h4>Outcome</h4>
+			<ul>
+				<li>Candidate demonstrates readiness for solo shifts</li>
+			</ul>
+			
+		<h3>DAY 8 – Solo Live Reception (AM Shift) – PAID</h3>
+		<h4>Purpose</h4>
+		<p>Controlled independence with oversight.</p>
+		<h4>Activities</h4>
+			<ul>
+				<li>Candidate handles live reception tasks</li>
+				<li>Performance monitored (response quality, judgment, timeliness)</li>
+			</ul>
+		<h4>Outcome</h4>
+			<ul>
+				<li>Assessment of real-world readinesss</li>
+			</ul>
+			
+		<h3>DAY 9 – Solo Live Reception (PM Shift) – PAID (FINAL ASSESSMENT)</h3>
+		<h4>Purpose</h4>
+		<p>Final evaluation of employment readiness.</p>
+		<h4>Assessment Focus</h4>
+			<ul>
+				<li>Independent decision-making</li>
+				<li>De-escalation skills</li>
+				<li>Policy compliance</li>
+				<li>Professional communication</li>
+				<li>Confidence under pressure</li>
+			</ul>
+		<h4>Outcome</h4>
+			<ul>
+				<li><b>Pass</b>: Confirmed for role</li>
+				<li><b>Fail</b>: Training unsuccessful / next steps determined by management</li>
+			</ul>
+			
+		<h3>Training Summary</h3>
+			<ul>
+				<li><b>Total Days</b>: 9</li>
+				<li><b>Unpaid</b>: 5 days</li>
+				<li><b>Paid</b>: 4 days</li>
+				<li><b>Elimination Points</b>: Day 1 and Day 4</li>
+			</ul>	
+      </div>
+	</section>
+	
+	 <section class="docSection" data-process-id="Welcome-3" data-nav-group="onboarding" data-tags="Introduction to the Tools" data-title="Introduction to the Tools">
+      <h2>Introduction to the Tools</h2>
+      <div class="card">
+        <h2>Tools Overview – Introduction</h2>
+		<h3>Welcome to the Tools Overview training.</h3>
+		<p>In this, we’ll walk through the key systems we use daily to manage reservations, guest access, communication, and security.</p>
+		<p>These tools help ensure smooth operations, accurate information, and a safe experience for both guests and staff. 
+		   Each system has a specific purpose, and understanding how they work together is essential to your role..</p>
+		<p>Let’s get started.</p>
+      </div>
+	  
+	  
+	  <details class="accordion" id="Cloudbeds"
+         data-title="Cloudbeds Introduction"
+         data-keywords="Intro Introduction Cloudbeds">
+  <summary>1. Cloudbeds</summary>
+  <div class="card">
+    <h2>Cloudbeds Training – System Overview</h2>
+    <p><b>Cloudbeds</b> is our main central system.</p>
+    <p>This is where all bookings from different channels, such as <b>Booking.com</b> and <b>Agoda</b>, are collected and managed in one place.</p>
+		
+			<div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1oFckDqRmeZ4Ga220aF7Nmquj-w-emqXs/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>
+	
+	
+    <!-- ACCORDION 1 -->
+    <details class="accordion"
+             id="dashboard-overview"
+             data-title="Dashboard Overview"
+             data-keywords="Cloudbeds Dashboard Overview properties menu">
+      <summary>Dashboard Overview</summary>
+      <div class="card">
+        <p>Upon logging into Cloudbeds, Dashboard  gives you a quick overview of:</p>
+        <ul>
+          <li>Arrivals and departures</li>
+          <li>Current accommodations booked</li>
+          <li>Today’s activities</li>
+          <li>A list of guest reservations</li>
+        </ul>
+        <p>This helps you immediately see what’s happening for the day.</p>
 
-    <!-- =========================
-         SHIFT SOPs (FIXED)
-         The previous file had broken tags above, which stopped rendering here.
-    ========================== -->
+        <h3>Switching Properties</h3>
+        <p>To access different properties, click the <b>property name</b> located at <b>the upper left corner</b> of the page.</p>
+        <p>A dropdown will appear showing all other available properties. Simply select the property you want to manage.</p>
+        <p>The <b>three horizontal bars</b> beside the property name open the main menu, where you can access other Cloudbeds features and options.</p>
+      </div>
+    </details>
 
-    <section class="docSection" data-process-id="Early Shift" data-tags="Early Shift" data-title="Early Shift">
+    <!-- ACCORDION 2 -->
+    <details class="accordion"
+             id="calendar-view"
+             data-title="Calendar View"
+             data-keywords="Calendar View Cloudbeds">
+      <summary>Calendar View</summary>
+      <div class="card">
+        <p>On the <b>upper right</b> of the page, click the <b>calendar icon</b> to open the <b>Cloudbeds Calendar</b>.</p>
+        <p>This is the most commonly used page during your shift.</p>
+        <p>Since all bookings come from multiple channels, any availability shown here is automatically reflected across all connected booking platforms.</p>
+        <p>The calendar uses <b>color indicators</b> to show reservation status:</p>
+        <ul>
+          <li><b>Blue</b> – Confirmed bookings</li>
+          <li><b>Green</b> – Checked-in guests</li>
+          <li><b>Gray</b> – Checked-out guests</li>
+        </ul>
+        <p>You can click the <b>legend</b> at the bottom left for reference.</p>
+      </div>
+    </details>
+
+    <!-- ACCORDION 3 -->
+    <details class="accordion"
+             id="viewing-a-reservation"
+             data-title="Viewing a Reservation"
+             data-keywords="Viewing a Reservation reservation details notes balance due status">
+      <summary>Viewing a Reservation</summary>
+      <div class="card">
+        <p>When you click on a reservation, you’ll see full details including:</p>
+        <ul>
+          <li>Guest name</li>
+          <li>Reservation status (confirmed, in-house, or checked-out)</li>
+          <li>Number of guests</li>
+          <li>Balance due</li>
+          <li>Reservation notes</li>
+        </ul>
+        <p>Always check the notes section for important instructions or reminders.</p>
+      </div>
+    </details>
+
+    <!-- ACCORDION 4 -->
+    <details class="accordion"
+             id="room-types-and-rooms"
+             data-title="Room Types and Rooms"
+             data-keywords="Room Types rooms left panel assignments availability">
+      <summary>Room Types and Rooms (Left Panel)</summary>
+      <div class="card">
+        <p>On the <b>left side</b>, you’ll see the <b>Room Types</b> and <b>individual room setup</b>.</p>
+        <p>Guests book a <b>room type</b>, and Cloudbeds automatically assigns one of the rooms under that category based on availability.</p>
+      </div>
+    </details>
+	
+	<!-- ACCORDION 5 -->
+    <details class="accordion"
+             id="reservtions-list-&-filter-paage"
+             data-title="Reservations List & Filter Page"
+             data-keywords="Reservations List & Filter Page">
+      <summary>Reservations List & Filter Page</summary>
+      <div class="card">
+        <p>On the <b>upper right</b>, click the <b>Reservations icon</b> to open the <b>Reservations List & Filter page</b>.</p>
+        <p>Here’s what you can do on this page:</p>
+			<ul>
+				<li><b>Filter section (top):</li>
+					<ul>
+						<li>Narrow reservations by booking date, stay dates, status, room type, booking source/channel, and meal plan.</li>
+					</ul>
+				<li><b>Apply / Clear:</li>
+					<ul>
+						<li>Apply your selected filters or reset them.</li>
+					</ul>
+				<li><b>Reservations table (bottom):</li>
+					<ul>
+						<li>Displays reservation number, guest name, booking date, property, room number, and check-in date.</li>
+					</ul>
+				<li><b>Search bar:</li>
+					<ul>
+						<li>Quickly find a reservation by name, reservation number, or keyword.</li>
+					</ul>
+				<li><b>Bulk Action:</li>
+					<ul>
+						<li>Perform actions on multiple reservations at once.</li>
+					</ul>
+				<li><b>Pagination & view size:Pagination & view size:</li>
+					<ul>
+						<li>Control how many reservations appear per page and navigate through results.</li>
+					</ul>
+			</ul>
+		<p>This page is mainly used to <b>search, review, filter, and manage reservations</b> efficiently.</p>
+	  </div>
+    </details>
+
+	<!-- ACCORDION 5 -->
+    <details class="accordion"
+             id="Top-Right Utility Icons"
+             data-title="Top-Right Utility Icons"
+             data-keywords="Top-Right Utility Icons">
+      <summary>Top-Right Utility Icons</summary>
+      <div class="card">
+        <p>Finally, on the <b>top-right corner</b>, you’ll see the utility icons:</p>
+        <ul>
+			<li><b>Bell icon</b> – Notifications for reservations, tasks, and system alerts</li>
+			<li><b>Megaphone icon</b> – Important Cloudbeds announcements and updates</li>
+			<li><b>Printer icon</b> – Print tools for reservation lists and reports</li>
+			<li><b>Chat bubble icon</b> – Messages or Inbox for guest and channel communications</li>
+			<li><b>User icon</b> – Profile settings, preferences, permissions, and logout</li>
+		</ul>
+      
+      </div>
+    </details>
+	
+	<!-- ACCORDION 6 -->
+    <details class="accordion"
+             id="Closing Line"
+             data-title="Closing Line"
+             data-keywords="Closing Line">
+      <summary>Closing Line</summary>
+      <div class="card">
+        <p>Cloudbeds is the main system you’ll use throughout your shift, so becoming familiar with the dashboard, calendar, and reservations page is essential for smooth daily operations.</p>
+       
+      </div>
+    </details>
+  </div>
+</details>
+
+		<details class="accordion" id="goki"
+               data-title="Goki"
+               data-keywords="Goki Digital Keys Access Code">
+			<summary>2. Goki</summary>
+	  <div class="card">
+		<h2>GOKI Training – System Overview</h2>
+        		<p><b>Goki</b> is <b>our digital key system</b>.</p>
+		<p>It allows us to <b>enable and disable access to rooms and entrances remotely</b>.
+		Goki is connected to <b>CloudBeds</b>, so once a booking is in the system,
+		guests can access their <b>rooms and entrances using a PIN code</b> or the Goki app, depending on the setup.
+		Guests who download the <b>Goki app</b> and activate their key can also <b>open the doors directly from the app</b>.
+		When they are near the main entrance or their room, they can tap the <b>digital key button</b> in the app to unlock the door.
+		Their access will only work during their stay dates and will automatically stop after check-out.</p>
+		
+		<div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1G_EuJckwWNvx8B4u6KDNTb00hvDPCrFS/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>
+
+	<!-- ACCORDION 1 -->
+    <details class="accordion"
+             id="Dashboard Overview"
+             data-title="Dashboard Overview"
+             data-keywords="Dashboard Overview">
+      <summary>Dashboard Overview</summary>
+      
+      <div class="card">
+        <p>First, open <b>Goki</b> in your browser and log in using your work email and password.
+		After you log in, you’ll see the <b>dashboard</b>.</p>
+		<p>Here, you can see:</p>
+			<ul>
+				<li>Today’s check-ins and check-outs</li>
+				<li>Current in-house guests</li>
+				<p>and</p>
+				<li>Lock/battery status for rooms</li>
+					<ul>
+						<li>Ideally, batteries lower than 40% should be changed to avoid access issues for guests.</li>
+					</ul>
+			</ul>
+       <p>On the <b>top left</b>, you can change the <b>property</b> by clicking the dropdown and selecting the correct address. Always make sure you’re on the right property before checking reservations or sending keys.</p>
+	         </div>
+    </details>
+	
+	<!-- ACCORDION 2 -->
+    <details class="accordion"
+             id="Messages"
+             data-title="Messages"
+             data-keywords="Messages">
+      <summary>Messages</summary>
+      <div class="card">
+        <p>Next, let’s look at <b>Messages</b>.</p>
+			<ul>
+				<li>Messages allow us to <b>communicate directly with guests</b> through Goki.</li>
+				<li>Guests can <b>only receive and send messages</b> if they have the <b>Goki app</b> and an account.</li>
+				<li>If a guest does <b>not</b> have the app or an account, Goki will <b>not</b> give you the option to message them.</li>
+				<p>Unread Goki messages are marked in <b>red</b>.</p>
+				<li>Once a message is opened, it will <b>lose the red mark</b>.</li>
+				<li>Always make sure to <b>respond to messages</b> once you open them, so nothing is left unattended. It is mandatory to monitor messages throughout your shift.</li>
+       
+      </div>
+    </details>
+	
+	<!-- ACCORDION 3 -->
+    <details class="accordion"
+             id="Shoutouts"
+             data-title="Shoutouts"
+             data-keywords="Shoutouts">
+      <summary>Shoutouts</summary>
+      <div class="card">
+        <p><b>Shoutout</b>is Goki’s <b>message blast</b> feature.</p>
+			<ul>
+				<li>We use Shoutouts to <b>inform guests in bulk</b>, like a notice board.</li>
+				<li>You can send <b>mass messagesv to</b>:</li>
+					<ul>
+						<li>All guests in the property</li>
+						<li>Guests in <b>specific rooms</li>
+						<li>Guests in a <b>specific property</b> only</li>
+					</ul>
+			</ul>
+		<p>This is useful for announcements like <b>quiet hours, maintenance notices, or events</b>.</p>
+      
+	  </div>
+    </details>
+	
+	<!-- ACCORDION 4 -->
+    <details class="accordion"
+             id="Activities"
+             data-title="Activities"
+             data-keywords="Activities">
+      <summary>Activities</summary>
+      <div class="card">
+        <p>Under <b>Activities</b>, we post <b>any activities happening in the property</b> and invite guests to sign up.</p>
+		<p>A common example is our <b>complimentary dinner sign-up</b>.</p>
+			<ul>
+				<li>We create an activity in Goki.</li>
+				<li>Guests can <b>sign up</b> through the app.</li>
+				<li>Those who sign up will appear in the <b>list</b>.</li>
+			</ul>
+		<p>By around <b>4 p.m.</b>, we check the list and make sure everyone who signed up is <b>added to the system</b> or prepared for the activity.</p>
+      
+	  </div>
+    </details>
+	
+	<!-- ACCORDION 5 -->
+    <details class="accordion"
+             id="Reservations"
+             data-title="Reservations"
+             data-keywords="Reservations">
+      <summary>Reservations</summary>
+      <div class="card">
+        <p>Now, let’s go to the <b>Reservations</b> section.</p>
+		<p>Here, you can:</p>
+			<ul>
+				<li>Check <b>guest reservation details</li>
+				<li>See the <b>booking status</li>
+				<li>View their <b>PIN code</b> for Goki access.</li>
+			</ul>
+		<p>You’ll also see <b>dot indicators</b> showing the booking status:</p>
+			<ul>
+				<li><b>Hollow dots</b> – Checked out</li>
+				<li><b>Blue dots</b> – In-house</li>
+				<li><b>Black dots</b> – Upcoming booking</li>
+				<li><b>White/grey dots</b> – Cancelled booking</li>
+			</ul>
+		<p>This helps you quickly see if a guest is due to arrive, currently staying, or already checked out.</p>
+      
+	  </div>
+    </details>
+	
+	<!-- ACCORDION 6 -->
+    <details class="accordion"
+             id="Rooms without Goki / Static Codes"
+             data-title="Rooms without Goki / Static Codes"
+             data-keywords="Rooms without Goki / Static Codes">
+      <summary>Rooms without Goki / Static Codes</summary>
+      <div class="card">
+        <p>Remember:</p>
+			<ul>
+				<li>In <b>Surry Hills</b>, all rooms do not have Goki <b>except Room 3 and Room 14</b>. These rooms use static codes, which you can find in the <b>property info section in Notion</b>.</li>
+				<li>In <b>Potts Point, Room 105</b> also does <b>not</b> have Goki and uses a <b>static code</b>, also listed in the property info section in <b>Notion</b>.</li>
+			</ul>
+
+	  </div>
+    </details>
+	
+	<!-- ACCORDION 7 -->
+    <details class="accordion"
+             id="Closing"
+             data-title="Closing"
+             data-keywords="Closing">
+      <summary>Closing</summary>
+      <div class="card">
+        <p>That’s the basic navigation of <b>Goki</b> for reception.</p>
+		<p>As a receptionist, your main tasks in Goki are:</p>
+			<ul>
+				<li>Checking bookings and guest details</li>
+				<li>Generating digital keys</li>
+				<li>Adjusting access when bookings change</li>
+				<li>Making sure guests can enter the property and their room smoothly.</li>
+			</ul>
+		<p>If you’re unsure about anything, always check with your <b>senior receptionist or manager</b> before making big changes.
+			
+	  </div>
+    </details>
+			
+   </div>
+ </details>
+		
+		<details class="accordion" id="accordion-09"
+               data-title="Go-High-Level-(GHL)"
+               data-keywords="Go High Level (GHL)">
+			<summary>3. Go High Level (GHL)</summary>
+	  <div class="card">
+		<h2>GHL Training – System Overview</h2>	
+       <p>GHL is our omni-inbox system.</p>
+	   <p>It consolidates <b>emails, SMS, and calls into one place</b>, so we don’t have to jump between different apps.</p>
+	   <p>We use GHL to:</p>
+		<ul>
+			<li>Manage <b>guest check-ins</li>
+			<li>Send <b>automated and manual communications</b> to guests</li>
+		</ul>
+		
+		<div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1iClMvImOwDKY_IWvG4CvpI_w29TiRs80/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>
+		
+		
+	<!-- ACCORDION 1 -->
+    <details class="accordion"
+             id="Navigating the GHL Dashboard"
+             data-title="Navigating the GHL Dashboard"
+             data-keywords="Navigating the GHL Dashboard">
+      <summary>Navigating the GHL Dashboard</summary>
+      <div class="card">
+        <p>When you log in to GHL, you’ll see the <b>main dashboard</b>.</p>
+		<p>On the <b>left-hand side</b>, you’ll see the menu, including:</p>
+			<ul>
+				<li><b>Conversations</b> – this is our omni-inbox</li>
+				<li><b>Opportunities</b> – where we track check-in flow and other pipelines</li>
+				<li>Other tools we may use depending on our role</li>
+			</ul>
+		<p>If you’re unsure about anything, always check with your <b>senior receptionist or manager</b> before making big changes.</p>
+			
+	  </div>
+    </details>
+	
+	<!-- ACCORDION 2 -->
+    <details class="accordion"
+             id="Conversations"
+             data-title="Conversations"
+             data-keywords="Conversations">
+      <summary>Conversations</summary>
+      <div class="card">
+        <p>Most of the time as a receptionist, you’ll work inside <b>Conversations</b>.</p>
+		<p>Click on <b>Conversations </b>on the left.</p>
+		<p>Here you can see:</p>
+			<ul>
+				<li>All incoming <b>SMS</b>, <b>emails</b>, and sometimes <b>missed call</b> logs</li>
+				<li>Conversations are usually sorted <b>with the most recent at the top</b>.</li>
+			</ul>
+		<p>To send or reply to a message:</p>
+			<ul>
+				<li>Click on the <b>conversation</b> on the left side</li>
+				<li>Type your reply in the <b>message box</b> at the bottom</li>
+				<li>Then click <b>Send</li>
+			</ul>
+		<p><b>If a guest directly asks to be added to the dinner list, we will manually add them to the list and add a dinner tag to their contact details in GHL so they are properly counted.</b></p>
+		<p>Always:</p>
+			<ul>
+				<li>Check the <b>guest name and property</b> before replying</li>
+				<li>Keep replies <b>clear, polite, and professional</li>
+				<li>Make sure to <b>respond to messages</b> once you open them, so nothing is left unattended. It is mandatory to monitor messages throughout your shift.</li>
+			</ul>
+			
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 3 -->
+    <details class="accordion"
+             id="Making Calls"
+             data-title="Making Calls"
+             data-keywords="Making Calls">
+      <summary>Making Calls</summary>
+      <div class="card">
+       <p>GHL also allows us to make calls directly from the system.</p>
+	   <p>To make a call:</p>
+			<ul>
+				<li>Go to the <b>top right</b> of the screen</li>
+				<li>Click the <b>green phone icon</li>
+				<li>You can <b>enter the phone number</b> directly, or <b>click Contacts</b> and <b>search for the guest name</li>
+			</ul>
+		<p>Once you select the contact, you can start the call.</p>
+		<p>Next, let’s look at <b>check-in management</b> using GHL.</p>
+		<p>If the guest hasn’t completed their check-in, or they lost the link, you can <b>resend the registration form manually from GHL</b>.</p>
+		<p>Here’s how:</p>
+			<ul>
+				<li>Go back to <b>Conversations</li>
+				<li>Open the <b>chat</b> with that guest</li>
+				<li>At the bottom of the chat, click the <b>plus (+) button</li>
+				<li>In the search bar, type the word “<b>link</b>”</p>
+				<li>Select the <b>custom value</b> called “<b>Digital check-in link</b>”
+			</ul>
+		
+		<p>This will insert the correct <b>check-in link</b> into the message.</p>
+		<p>Then send the message so the guest can complete the form.</p>
+
+			
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 4 -->
+    <details class="accordion"
+             id="Closing-2"
+             data-title="Closing"
+             data-keywords="Closing">
+      <summary>Closing</summary>
+      <div class="card">
+       <p>That’s a basic overview of using <b>GHL (Go High Level)</b> as a receptionist.</p>
+	   <p>We covered:</p>
+			<ul>
+				<li>Using the omni-inbox for messagesUsing the <b>omni-inbox</b> for messages</li>
+				<li>Making <b>calls</li>
+				<li>Managing <b>check-ins</b> and resending the <b>digital check-in link</li>
+				<li>Handling <b>dinner reservations</b> and creating the final list for staff</li>
+			</ul>
+		<p>If you’re ever unsure, ask a <b>senior receptionist or your manager</b> before changing anything important.</p>
+			
+	  </div>
+    </details>   
+	   
+  </div>
+</details>
+		
+		<details class="accordion" id="accordion-10"
+               data-title="Step-by-step checklist"
+               data-keywords="Google Workplace Gmail Email">
+		<summary>4. Gmail / Google Workplace</summary>
+	  <div class="card">
+		<p><b>Frontdesk Gmail</b> is our official communication channel for guest emails.
+		All guest <b>inquiries, requests, complaints, and booking-related</b> communication must be
+		handled through this inbox to ensure consistency, accountability, and proper record-keeping.</p>
+		
+		<p>Please check Frontdesk Gmail <b>regularly</b> during your shift, <b>respond professionally and promptly</b>,
+		and <b>avoid using personal email accounts</b> under any circumstances. If an issue requires <b>escalation,
+		ensure the full email thread is documented and shared with management</b>.</p>
+		
+		<p>Using Frontdesk Gmail correctly helps us maintain service standards, protect the company, and deliver a consistent guest experience across all Azzurro properties.</p>
+		
+       </div>
+		</details>
+		
+		<details class="accordion" id="accordion-11"
+               data-title="Step-by-step checklist"
+               data-keywords="Spaces Door Keys">
+		<summary>5. Spaces</summary>
+	  <div class="card">
+	  <h2>Spaces - Guest Access Management</h2>
+		<p><b>Spaces</b> is a companion app to Goki, designed to simplify the management of guest access.
+		It allows staff to coordinate key deliveries, monitor digital keys, and see guest information in real time.
+		Imagine having all your property’s access data right on your mobile device—no need to check multiple systems.</p>
+          <p>Here are the things we can do in spaces app:</p>
+		  <ul>
+			  <li>Manage guest access in real time</li>
+			  <li>Monitor room status and battery levels</li>
+			  <li>Generate or revoke digital keys</li>
+		  </ul>
+		  
+		<div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1fcR2Po1HlNqkeCVfpsJQrm3z9DHtFGvL/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>		
+
+		 <!-- ACCORDION 1 -->
+    <details class="accordion"
+             id="Getting Started with Spaces"
+             data-title="Getting Started with Spaces"
+             data-keywords="Getting Started with Spaces">
+      <summary>Getting Started with Spaces</summary>
+      <div class="card">
+		<p>Here is how you get started with Spaces</p>
+			<ul>
+				<li>Step 1: Download the App</li>
+					<ul>
+						<li>First, download the Spaces by Goki app from your App Store or Google Play Store. Install it just like any other app.</li>
+					</ul>
+				<li>Step 2: Log In</li>
+					<ul>
+						<li>Next, log in using your Goki account credentials. If prompted, complete the two-factor authentication for extra security.</li>
+					</ul>
+				<li>Step 3: Explore the SidebarStep 3: Explore the Sidebar</li>
+					<ul>
+						<li>Once logged in, you’ll notice a sidebar on the left. Here,
+						all your properties are listed. For example, Pyrmont Budget Hotel.
+						You can switch between properties with a tap.
+						Some properties might be labeled by location, like Potts Point, labeled as ‘141–143 Victoria.</li>
+					</ul>
+				<li>Handling <b>dinner reservations</b> and creating the final list for staff</li>
+			</ul>
+		<p>If you’re ever unsure, ask a <b>senior receptionist or your manager</b> before changing anything important.</p>
+			
+	  </div>
+    </details>    
+		  
+	  <!-- ACCORDION 2 -->
+    <details class="accordion"
+             id="Managing Rooms and Guest Access"
+             data-title="Managing Rooms and Guest Access"
+             data-keywords="Managing Rooms and Guest Access">
+      <summary>Managing Rooms and Guest Access</summary>
+      <div class="card">
+		<p>After selecting a property, you can see all the rooms managed by Goki. For each room, Spaces shows whether it’s online, offline, and the battery percentage—helpful to know if the room is ready for guest access.</p>
+		<p>Spaces also shows which guests currently have active digital keys.</p>
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 3 -->
+    <details class="accordion"
+             id="Quick Tips for Using Spaces"
+             data-title="Quick Tips for Using Spaces"
+             data-keywords="Quick Tips for Using Spaces">
+      <summary>Quick Tips for Using Spaces</summary>
+      <div class="card">
+		<p>Here are a few quick tips to get the most out of Spaces:</p>
+			<ul>
+				<li>Always check room battery status before issuing keys.</li>
+				<li>Revoke keys immediately if a guest checks out early.</li>
+				<li>Use Spaces on a mobile device for instant updates on guest access.</li>
+			</ul>
+		<p>With Spaces, managing guests becomes faster, smoother, and more reliable.</p>
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 4 -->
+    <details class="accordion"
+             id="Quick Tips for Using Spaces-2"
+             data-title="Quick Tips for Using Spaces"
+             data-keywords="Quick Tips for Using Spaces">
+      <summary>Quick Tips for Using Spaces</summary>
+      <div class="card">
+		<p>Here are a few quick tips to get the most out of Spaces:</p>
+			<ul>
+				<li>Always check room battery status before issuing keys.</li>
+				<li>Revoke keys immediately if a guest checks out early.</li>
+				<li>Use Spaces on a mobile device for instant updates on guest access.</li>
+			</ul>
+		<p>With Spaces, managing guests becomes faster, smoother, and more reliable.</p>
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 5 -->
+    <details class="accordion"
+             id="Closing-3"
+             data-title="Closing"
+             data-keywords="Closing">
+      <summary>Closing</summary>
+      <div class="card">
+		<p>And that’s a quick overview of <b>Spaces</b>! By using this app, you can monitor guest access,
+		manage digital keys, and make property management simpler and more efficient.
+		Stay tuned for our next video where we’ll cover <b>Ring</b>—a tool to monitor property security in real time.</p>
+	  </div>
+    </details>   
+	
+   </div>
+</details>
+		
+		<details class="accordion" id="accordion-12"
+               data-title="Step-by-step checklist"
+               data-keywords="Key Expectations for All Staff All team members are expected to">
+		<summary>6. Ring</summary>
+	  <div class="card">
+		<h2>Introduction to Ring (Property Security)</h2>
+		<p>Ring is a web platform that connects to cameras, doorbells, and other security devices at your properties.
+		Staff can watch live video feeds, review recorded events, and respond to guest access requests—all from a web browser.</p>
+		<p>It’s perfect for seeing who’s at your property, speaking directly to visitors, and managing entry without being physically present</p>
+		<p>Here are the things we can do with Ring:</p>
+			<ul>
+				<li>Live video monitoring</li>
+				<li>Review recorded events</li>
+				<li>Two-way communication with guests</li>
+				<li>Manage entry remotely</li>
+			</ul>
+
+		<div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1kd2_MA6xewpahZNZ3tAPdJUhK8lhOmXb/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>		
+		  
+		  
+	  <!-- ACCORDION 1 -->
+    <details class="accordion"
+             id="Getting Started with Ring"
+             data-title="Getting Started with Ring"
+             data-keywords="Getting Started with Ring">
+      <summary>Getting Started with Ring</summary>
+      <div class="card">
+	  <p>Here is how you get started with Spaces</p>
+			<ul>
+				<li>Step 1: Access the Website</li>
+					<ul>
+						<li>Open your web browser and go to ring.com. Click ‘Log In’ at the top right, enter your Ring account credentials, and complete 2FA if prompted.</li>
+					</ul>
+				<li>Step 2: Explore the Sidebar</li>
+					<ul>
+						<li>Once logged in, the sidebar on the left displays all your Ring devices—doorbells, cameras, and security lights.
+						You can navigate between properties or devices to see what’s happening in real time.</li>
+					</ul>
+			</ul>
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 2 -->
+    <details class="accordion"
+             id="Using Ring Features"
+             data-title="Using Ring Features"
+             data-keywords="Using Ring Features">
+      <summary>Using Ring Features</summary>
+      <div class="card">
+	  <p>With Ring, you can:</p>
+			<ul>
+				<li><b>View Live Video:</b> Watch cameras in real time to see activity at your property.</li>
+				<li><b>Monitor Property & Recorded Events:</b> Review past motion alerts, doorbell rings, and recordings.</li>
+				<li><b>Check Guest Assistance Requests:</b> See which guests need help with entry.</li>
+				<li><b>Two-Way Communication:</b> Speak directly to guests through the mic, and hear their responses in real time.</li>
+			</ul>
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 3 -->
+    <details class="accordion"
+             id="Quick Tips for Ring"
+             data-title="Quick Tips for Ring"
+             data-keywords="Quick Tips for Ring">
+      <summary>Quick Tips for Ring</summary>
+      <div class="card">
+	  <p>To get the best experience:</p>
+			<ul>
+				<li>Use Ring on a <b>larger screen</b> for easier video review.</li>
+				<li><b>Refresh your browser occasionally</b> if devices disconnect.</li>
+				<li><b>Never share your login</b> to keep your properties secure.</li>
+			</ul>
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 4 -->
+    <details class="accordion"
+             id="Closing-4"
+             data-title="Closing"
+             data-keywords="Closing">
+      <summary>Closing</summary>
+      <div class="card">
+	  <p>And that’s your introduction to <b>Ring</b>! By using this tool, you can monitor your properties,
+	  communicate with guests instantly, and enhance security across the board.
+	  Together with Spaces, these platforms make property management safer and more efficient than ever.</p>	
+	  </div>
+    </details>   
+	  
+	</div>	
+</details>
+		
+		<details class="accordion" id="accordion-13"
+               data-title="Step-by-step checklist"
+               data-keywords="DMSS CCTV ">
+		<summary>7. DMSS</summary>
+	  <div class="card">
+		<h2>Introduction to DMSS (CCTV Monitoring)</h2>	
+		<p><b>DMSS</b> is a <b>mobile CCTV application</b> used to monitor security cameras across multiple properties. <b>Similar to Ring</b>,
+		it allows staff to view live video feeds and review recordings.
+		However, DMSS is designed to handle a <b>larger number of CCTV cameras</b>,
+		making it ideal for properties with extensive camera coverage.</p>
+		<p>Here are the things we can do with DMSS:</p>
+			<ul>
+				<li>Live CCTV monitoring</li>
+				<li>access multiple cameras per property</li>
+				<li>Real-time visibility from your phone</li>
+				<li>Centralized security monitoring</li>
+			</ul>
+
+		  <div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1sjCkurKXYoQNiCAMylUsxHSvFdNVQklu/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>		
+			
+	<!-- ACCORDION 1 -->
+    <details class="accordion"
+             id="Getting Started with DMSS"
+             data-title="Getting Started with DMSS"
+             data-keywords="Getting Started with DMSS">
+      <summary>Getting Started with DMSS</summary>
+      <div class="card">
+	  <p>Here is how you get started with Spaces</p>
+			<ul>
+				<li>Step 1: Open your App Store or Google Play Store</li>
+					<ul>
+						<li>Search for <b>DMSS</b>, and <b>download</b> the app to your phone.</li>
+					</ul>
+				<li>Step 2: Log In</li>
+					<ul>
+						<li>Once installed, open the app and log in using the provided DMSS account credentials.
+						If required, complete any verification steps to secure your access.</li>
+					</ul>
+			</ul>
+	  </div>
+    </details>  
+	
+	<!-- ACCORDION 2 -->
+    <details class="accordion"
+             id="Navigating the App and Viewing Cameras"
+             data-title="Navigating the App and Viewing Cameras"
+             data-keywords="Navigating the App and Viewing Cameras">
+      <summary>Navigating the App and Viewing Cameras</summary>
+      <div class="card">
+	  <p>When you log in, you’ll immediately see access to all CCTV cameras linked to your account. Cameras are organized by property, making it easy to switch between locations.</p>
+	  <p>Unlike other platforms, DMSS allows you to view multiple cameras at once. You can tap on any camera to expand it to full screen and monitor activity in real time.</p>
+	  <p>This setup gives staff instant visibility across entrances, hallways, common areas, and other monitored zones—directly from their phone.</p>
+	  </div>
+    </details>  
+	
+	<!-- ACCORDION 3 -->
+    <details class="accordion"
+             id="Monitoring and Security Features"
+             data-title="Monitoring and Security Features"
+             data-keywords="Monitoring and Security Features">
+      <summary>Monitoring and Security Features</summary>
+      <div class="card">
+	  <p>With DMSS, you can:</p>
+		<ul>
+				<li>View live CCTV footage in real time</li>
+				<li>Switch between cameras quickly</li>
+				<li>Monitor multiple areas across different properties</li>
+				<li>Stay aware of on-site activity without being physically present</li>
+			</ul>
+	  </div>
+    </details>  
+	
+	<!-- ACCORDION 4 -->
+    <details class="accordion"
+             id="Quick Tips for Using DMSS"
+             data-title="Quick Tips for Using DMSSQuick Tips for Using DMSS"
+             data-keywords="Quick Tips for Using DMSS">
+      <summary>Quick Tips for Using DMSS</summary>
+      <div class="card">
+	  <p>Here are a few tips to get the most out of DMSS:</p>
+		<ul>
+				<li>Use a stable internet connection for smooth live viewing</li>
+				<li>Familiarize yourself with camera locations per property</li>
+				<li>Regularly check cameras during peak hours</li>
+				<li>Keep your login details secure and never share access</li>
+			</ul>
+	  </div>
+    </details>  
+	
+	<!-- ACCORDION 5 -->
+    <details class="accordion"
+             id="Closing-5"
+             data-title="Closing"
+             data-keywords="Closing">
+      <summary>Closing</summary>
+      <div class="card">
+	  <p>And that’s a quick overview of <b>DMSS</b>. This app gives you <b>instant access to all CCTV cameras across your properties</b>,
+	  helping you <b>maintain safety, awareness, and control</b> at all times. When used alongside Spaces and Ring,
+	  DMSS completes a powerful set of tools for efficient and secure property management.</p>
+	  </div>
+    </details>  
+	
+  </div>
+</details>
+		
+		<details class="accordion" id="accordion-14"
+               data-title="Step-by-step checklist"
+               data-keywords="VivoCloud Vivo CCTVV ">
+		<summary>8. VivoCloud</summary>
+	  <div class="card">
+		<h3>VivotekCloud Training – System Overview</h3>
+		<p>This is the VIVOTEK VIVOCloud mobile app. It allows authorized staff to monitor CCTV footage for the Surry Hills property only. </p>
+
+		  <div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1lQa2QKTgcmIqbYERvG8X02U6I0SgQIRZ/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>
+
+		  
+	<!-- ACCORDION 1 -->
+    <details class="accordion"
+             id="Step 1: Log in to VivoCloud"
+             data-title="Step 1: Log in to VivoCloud"
+             data-keywords="Step 1: Log in to VivoCloud">
+      <summary>Step 1: Log in to VivoCloud</summary>
+      <div class="card">
+       <p>Download and open the app on your mobile phone and log in to VivoCloud using your assigned username and password.</p>
+		<p>Access is limited to authorized staff only.</p>
+			
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 2 -->
+    <details class="accordion"
+             id="Step 2: Open the CCTV Module"
+             data-title="Step 2: Open the CCTV Module"
+             data-keywords="Step 2: Open the CCTV Module">
+      <summary>Step 2: Open the CCTV Module</summary>
+      <div class="card">
+       <p>Once logged in, locate and click CCTV from the main menu or dashboard.</p>
+		<p>This will open the camera monitoring interface.</p>
+			
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 3 -->
+    <details class="accordion"
+             id="Step 3: Choose a Camera"
+             data-title="Step 3: Choose a Camera"
+             data-keywords="Step 3: Choose a Camera">
+      <summary>Step 3: Choose a Camera</summary>
+      <div class="card">
+       <p>From the camera list, select the specific camera you want to view.</p>
+		<p>You can monitor:</p>
+			<ul>
+				<li>Common areas</li>
+				<li>Entry and exit points</li>
+				<li>Hallways or shared spaces</li>
+			</ul>
+		<p><i>(Private guest areas are not monitored.)</i></p>
+			
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 4 -->
+    <details class="accordion"
+             id="Step 4: View Live Footage"
+             data-title="Step 4: View Live Footage"
+             data-keywords="Step 4: View Live Footage">
+      <summary>Step 4: View Live Footage</summary>
+      <div class="card">
+       <p>Once selected, the camera will display <b>live video</b>.</p>
+		<p>Use this for:</p>
+			<ul>
+				<li>Real-time monitoring</li>
+				<li>Guest safety checks</li>
+				<li>Operational awareness</li>
+			</ul>
+		
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 5 -->
+    <details class="accordion"
+             id="Step 5: Review Recorded Footage (Playback)"
+             data-title="Step 5: Review Recorded Footage (Playback)"
+             data-keywords="Step 5: Review Recorded Footage (Playback)">
+      <summary>Step 5: Review Recorded Footage (Playback)</summary>
+      <div class="card">
+		<p>To view past footage:</p>
+			<ol>
+				<li>Switch to <b>Playback</b> or <b>Recorded View</li>
+				<li>Select the <b>date and time</li>
+				<li>Play, pause, rewind, or fast-forward as needed</li>
+			</ol>
+		<p>This is mainly used for <b>incident review or verification</b>.</p>
+		
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 6 -->
+    <details class="accordion"
+             id="Closing-6"
+             data-title="Closing"
+             data-keywords="Closing">
+      <summary>Closing</summary>
+      <div class="card">
+		<p>VivoCloud CCTV helps us maintain a safe and secure environment, and it should always be used responsibly and professionally.</p>
+		
+	  </div>
+    </details>   
+		
+		
+    </section>
+	
+	
+	
+	
+	
+	
+    <section class="docSection" data-process-id="check-in" data-tags="check-in id booking verification payment bond" data-title="Check-In & Check-Out Process">
+      <h2>Check-In & Check-Out Process</h2>
+
+      <details class="accordion" id="accordion-14-2"
+               data-title="Step-by-step checklist"
+               data-keywords="VivoCloud Vivo CCTVV ">
+		<summary>Introduction</summary>
+	  <div class="card">
+		<p>Hi team. We’ll do the full check-in process using Cloudbeds and GoKi.
+		Cloudbeds is our central system that collects bookings from all channels and we’ll spend most of our time on the <b>Calendar</b>,
+		because that’s where we manage arrivals, room assignments, and check-in status.</p>
+		<p>Before checking anyone in, make sure you’re in the correct property. Cloudbeds supports multiple properties, so you always confirm you’re viewing the right one.</p>
+		<h3>Action:</h3>
+			<ul>
+				<li>Click the <b>property name</b> at the upper-left.</li>
+				<li>Select the correct property from the dropdown.</li>
+				<li>Click the <b>Calendar icon</b> to open the Calendar page.</li>
+			</ul>
+
+		  <div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1c39iaMcOXZQQ7o7keQCK8VCR-5NDhbNJ/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>
+		  
+	<!-- ACCORDION 1 -->
+    <details class="accordion"
+             id="Step 1: Find Today’s Arrivals (Calendar Date + Visual Status Feature)"
+             data-title="Step 1: Find Today’s Arrivals (Calendar Date + Visual Status Feature)"
+             data-keywords="Step 1: Find Today’s Arrivals (Calendar Date + Visual Status Feature)">
+      <summary>Step 1: Find Today’s Arrivals (Calendar Date + Visual Status Feature)</summary>
+      <div class="card">
+       <p>On the Calendar, Cloudbeds highlights the current date at the top, which makes it easy to identify today’s check-ins and check-outs.</p>
+		<p>You’ll also notice the calendar is color-coded.</p>
+		<h3>Action:</h3>
+			<ul>
+				<li>Go to today’s highlighted date.</li>
+				<li>Locate the guest you will check in (typically shown in <b>blue</b> if not yet checked in).</li>
+			</ul>
+			
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 2 -->
+    <details class="accordion"
+             id="Step 2: Open the Reservation Card"
+             data-title="Step 2: Open the Reservation Card"
+             data-keywords="Step 2: Open the Reservation Card">
+      <summary>Step 2: Open the Reservation Card</summary>
+      <div class="card">
+       <p>Now we click the booking block to open the <b>reservation card</b>. This is your quick scan before you go deeper.</p>
+		<h3>Action:</h3>
+			<ul>
+				<li>Click the guest booking on the calendar.</li>
+			</ul>
+		<p>On this reservation card, Cloudbeds shows key details like:</p>
+			<ul>
+				<li><b>Guest name</li>
+				<li><b>Booking status</b> (e.g., confirmed)</li>
+				<li><b>Booking reference</li>
+				<li><b>Booking source</b> (sometimes shown beside the reference)</li>
+				<li><b>Check-in/check-out dates</li>
+				<li><b>Number of guests</li>
+				<li><b>Estimated arrival time</li>
+				<li><b>Grand total</li>
+				<li><b>Balance due</b>, if any</li>
+			</ul>
+		<p>This quick scan tells us if the booking looks normal before we proceed.</p>
+		
+		<h2>Interpret Dots (Notes + Balance Due Indicators)</h2>
+		<p>Cloudbeds also uses dot indicators on the calendar bookings:</p>
+			<ul>
+				<li>A <b>yellow dot</b> means there are <b>notes</b> on the booking.</li>
+				<li>A <b>red dot means</b> there is a <b>balance due showing</b> in the system.</li>
+			</ul>
+		<p>These dots are important because notes can include guest requests or payment instructions, and balance due affects whether we can check them in.</p>
+			<ul>
+				<li>If you see a <b>yellow dot</b>, you’ll review Notes later in Reservation Details</li>
+				<li>If you see a <b>red dot</b>, you must verify the balance due in Reservation Details before check-in.</li>
+			</ul>
+		
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 3 -->
+    <details class="accordion"
+             id="Step 3: Open Reservation Details (Go to Reservation Feature)"
+             data-title="Step 3: Open Reservation Details (Go to Reservation Feature)"
+             data-keywords="Step 3: Open Reservation Details (Go to Reservation Feature)">
+      <summary>Step 3: Open Reservation Details (Go to Reservation Feature)</summary>
+      <div class="card">
+       <p>Next, we open <b>Reservation Details</b>, because that’s where we verify the guest requirements, ID, payments, and notes.</p>
+		<h3>Action:</h3>
+			<ul>
+				<li>Click <b>Go to Reservation</li>
+				<p> (or “Check in & Go to Reservation” only if you are sure everything is ready; we’ll do verification first.)</p>
+			</ul>
+			
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 4 -->
+    <details class="accordion"
+             id="Step 4: Verify Check-in Requirements (Documents Tab Feature)"
+             data-title="Step 4: Verify Check-in Requirements (Documents Tab Feature)"
+             data-keywords="Step 4: Verify Check-in Requirements (Documents Tab Feature)">
+      <summary>Step 4: Verify Check-in Requirements (Documents Tab Feature)</summary>
+      <div class="card">
+       <p>Inside Reservation Details, we go straight to the <b>Documents tab</b>. This tab shows whether the guest has completed our required check-in documents.</p>
+		<h3>Action:</h3>
+			<ul>
+				<li>Click <b>Documents</b> tab.</li>
+				<p>In our process, the two main requirements are:</p>
+				<li>the <b>Registration form</li>
+				<li>a <b>Valid Photo ID</li>
+				<p>If the guest has completed them, they will appear here. If the guest hasn’t arrived yet, the tab may still be empty.</p>
+			</ul>
+		<h3>Decision:</h3>		
+			<ul>
+				<li>If complete - proceed</li>
+				<li>If incomplete - send reminder</li>
+			</ul>
+		<p>IF the requirements are incomplete, we send the guest a reminder to complete the form and upload their ID. If they arrive without completing them, they must complete these at reception before we check them in.</p>
+		
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 5 -->
+    <details class="accordion"
+             id="Step 5: Verify and Upload Photo ID (Guest Details Tab Feature)"
+             data-title="Step 5: Verify and Upload Photo ID (Guest Details Tab Feature)"
+             data-keywords="Step 5: Verify and Upload Photo ID (Guest Details Tab Feature)">
+      <summary>Step 5: Verify and Upload Photo ID (Guest Details Tab Feature)</summary>
+      <div class="card">
+		<p>Now we verify the ID. Cloudbeds stores the uploaded ID under <b>Guest Details</b>, so this is where we confirm and upload it.</p>
+		<h3>Action:</h3>
+			<ul>
+				<li>Click Guest Details tab.</li>
+			</ul>
+		<p>Here you can see the guest contact details like email and phone number, and this is also where we upload the passport or photo ID.
+		For passports, make sure the photo and details are clear. IDs must be valid, no expired documents.</p>
+		<h3>Action:</h3>
+			<ul>
+				<li>Upload the ID/passport image in this tab (if not already uploaded or if you received it separately).</li>
+			</ul>
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 6 -->
+    <details class="accordion"
+             id="Step 6: Check Notes (Notes Tab + Yellow Dot Feature)"
+             data-title="Step 6: Check Notes (Notes Tab + Yellow Dot Feature)"
+             data-keywords="Step 6: Check Notes (Notes Tab + Yellow Dot Feature)">
+      <summary>Step 6: Check Notes (Notes Tab + Yellow Dot Feature)</summary>
+      <div class="card">
+		<p>Next, we review Notes. <b>Notes</b> are shared across reception, finance, and management, so anyone can add important instructions here.</p>
+		<h3>Action:</h3>
+			<ul>
+				<li>Click <b>Notes</b> tab.</li>
+			</ul>
+		<p>Notes may include:</p>
+			<ul>
+				<li>guest requests (example: <b>lower bunk request</b>)</li>
+				<li>operational info (example: <b>do not move</b>)</li>
+				<li>borrowed item tracking</li>
+				<li>payment instructions from Finance (example: <b>Expedia VCC paid</b>)</li>
+			</ul>
+		<p>Always check the <b>date</b> of notes because returning guests may have older notes that are no longer relevant.</p>
+		<h3>Action:</h3>
+			<ul>
+				<li>If there’s a special request, keep it in mind for room assignment decisions.</li>
+				<li>Add notes if needed (example: “Above 50 – prioritize bottom bunk”).</li>
+			</ul>
+		
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 7 -->
+    <details class="accordion"
+             id="Step 7: Verify Balance Due (Red Dot Handling + Reservation Details Balance Check)"
+             data-title="Step 7: Verify Balance Due (Red Dot Handling + Reservation Details Balance Check)"
+             data-keywords="Step 7: Verify Balance Due (Red Dot Handling + Reservation Details Balance Check)">
+      <summary>Step 7: Verify Balance Due (Red Dot Handling + Reservation Details Balance Check)</summary>
+      <div class="card">
+		<p>Now we check payments. If you saw a <b>red dot</b> on the calendar, it means Cloudbeds is showing a balance due, but we must verify if it’s accurate.</p>
+		<h3>Action:</h3>
+			<ul>
+				<li>In Reservation Details, look at the <b>Balance Due</b> shown in the booking summary area.</li>
+			</ul>
+		<p>Sometimes the calendar still shows a red dot even if the guest has already paid. If Reservation Details shows the balance due is 0.00, then the guest has paid and it may just be a system delay.</p>
+		<p><b>Expedia rule (Channel Collect)</b></p>
+		<p>Also, be mindful of <b>Expedia bookings</b>. Expedia payments can appear as balance due because Expedia releases payment later, even though the guest already paid them.</p>
+		<h3>Action:</h3>
+			<ul>
+				<li>Confirm booking source/payment type indicates Expedia/channel collect.</li>
+				<li>Check Notes for “Expedia VCC paid” when available.</li>
+			</ul>
+		<h3>Decision:</h3>
+			<ul>
+				<li>If balance is truly due (not zero and not an approved channel-collect exception) - do not check in</li>
+				<li>Proceed with sending a payment link instead. Go to Folio - Add Payment - set Payment Type to Pay by Link - select the charge to collect - set Link expires after to 1 day
+				- Continue. Copy the generated payment link and paste it in the Notes section, and you may also send it to the guest.</li>
+				<li>If balance is zero or Expedia paid via channel collect - proceed</li>
+			</ul>
+	  </div>
+	 </details>   
+	 
+	<!-- ACCORDION 8 -->
+    <details class="accordion"
+             id="Step 8: Check Guest Eligibility (Policy Check + Note Documentation)"
+             data-title="Step 8: Check Guest Eligibility (Policy Check + Note Documentation)"
+             data-keywords="Step 8: Check Guest Eligibility (Policy Check + Note Documentation)">
+      <summary>Step 8: Check Guest Eligibility (Policy Check + Note Documentation)</summary>
+      <div class="card">
+		<p>Before check-in, we confirm eligibility:</p>
+			<ul>
+				<li>Minimum age is <b>18</li>
+				<li>Guests <b>50+</b> should be prioritized for a <b>bottom bunk</b> if available.</li>
+			</ul>
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 9 -->
+    <details class="accordion"
+             id="Step 9: Check In Guest in Cloudbeds (Check-In Feature)"
+             data-title="Step 9: Check In Guest in Cloudbeds (Check-In Feature)"
+             data-keywords="Step 9: Check In Guest in Cloudbeds (Check-In Feature)">
+      <summary>Step 9: Check In Guest in Cloudbeds (Check-In Feature)</summary>
+      <div class="card">
+		<p>“Once Documents, ID, Notes, and Payments are confirmed, we can check in the guest.”</p>
+		<h3>Action:</h3>	
+			<ul>
+				<li>Return to the booking options and select:
+<ul>
+						<li><b>Check In Guest</b> (or)</li>
+						<li><b>Check In & Go to Reservation</li>
+					</ul>
+</li>
+			</ul>
+		<p>When checked in, the booking turns <b>green</b>, and the status becomes <b>In-house</b>.</p>
+		
+		<h3>Additional information:</h3>
+		<h4>Room Moves, Locks, and Special Handling (Calendar Management Features)</h4>
+		<p>Sometimes we need to move a guest to another room/bed. Cloudbeds allows this through room assignment controls.</p>
+		<p><b>Unassign / Quick Edit</b></p>
+			<ul>
+				<li><b>Unassign Room</b> removes the current assignment so you can move them.</li>
+				<li><b>Quick Edit</b> lets you adjust room assignment, dates, or split bookings.</li>
+			</ul>
+		<p><b>Locked bookings (Padlock icon)</b></p>
+		<p>If a booking has a <b>padlock icon</b>, that means it’s locked, usually due to a request like ‘do not move.’ Locked bookings cannot be dragged.</p>
+		<h3>Rule:</h3>
+		<p>“If you lock a booking, always leave a note explaining why.”</p>
+		<p><b>Female-only rooms check</b></p>
+		<p>For <b>female-only rooms</b>, all guests must be female. If a male booking appears, you must move it and escalate as needed.</p>
+		
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 10 -->
+    <details class="accordion"
+             id="Step 10: GoKi Sync Steps (After Cloudbeds Check-in)"
+             data-title="Step 10: GoKi Sync Steps (After Cloudbeds Check-in)"
+             data-keywords="Step 10: GoKi Sync Steps (After Cloudbeds Check-in)">
+      <summary>Step 10: GoKi Sync Steps (After Cloudbeds Check-in)</summary>
+      <div class="card">
+		<p>Cloudbeds and Goki are synced, so changes in Cloudbeds reflect in Goki. After check-in, we generate and copy the Goki access details.</p>
+		<h3>Action in Goki:</h3>
+			<ol>
+				<li>Go to <b>Reservations</li>
+				<li>Search guest name</li>
+				<li>Open booking and confirm <b>room/bed matches Cloudbeds</li>
+				<li>Open <b>View Reservation</li>
+				<li>Copy:
+<ul>
+						<li><b>Goki confirmation code</li>
+						<li><b>PIN code</li>
+					</ul>
+</li>
+			</ol>
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 11 -->
+    <details class="accordion"
+             id="Step 11: Send Check-In Details + Update Check-In File (Operational Completion)"
+             data-title="Step 11: Send Check-In Details + Update Check-In File (Operational Completion)"
+             data-keywords="Step 11: Send Check-In Details + Update Check-In File (Operational Completion)">
+      <summary>Step 11: Send Check-In Details + Update Check-In File (Operational Completion)</summary>
+      <div class="card">
+		<p>Now we paste the Goki PIN and confirmation code into the correct <b>property check-in details template</b>, then send it to the guest via email or SMS.</p>
+		<h3>Action:</h3>
+			<ul>
+				<li>Send the check-in details message.</li>
+				<li>Update the <b>check-in file</b>:</li>
+					<ul>
+						<li>Goki released = <b>Yes</li>
+						<li>Status = <b>All Good</li>
+					</ul>
+			</ul>
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 12 -->
+    <details class="accordion"
+             id="Check-Out Process"
+             data-title="Check-Out Process"
+             data-keywords="Check-Out Process">
+      <summary>Check-Out Process</summary>
+      <div class="card">
+		<p>All guests must check out at reception before leaving, so confirm their name or room and bed number and note if they booked via Booking.com (BDC)
+		or another platform. Ask if they’ve checked their belongings (bed area, locker, and common spaces), and ensure any borrowed items
+		(e.g., hair dryer, containers) are returned to reception or left on the bed so they won’t be charged a penalty. If they had a good stay,
+		politely ask for a review and to mention your name, show the QR/send the link, and if they booked via BDC, remind them they may receive a
+		review email within 24–48 hours. Thank them, wish them safe travels, and invite them back.</p>
+	  </div>
+    </details>
+ 
+</section>
+
+<section class="docSection" data-process-id="check-in-2" data-tags="Extending Guest Booking - GOKI" data-title="Extending Guest Booking - GOKI">
+      <h2>Extending Guest Booking - GOKI</h2>
+
+      <details class="accordion" id="accordion-14-3"
+               data-title="Extending Guest Booking - GOKI"
+               data-keywords="Extending Guest Booking - GOKI">
+		<summary>Instruction</summary>
+	  <div class="card">
+		<p>Sometimes guests decide to stay longer, and it’s important to update their booking properly in GOKI to avoid access or payment issues.
+		This should be done on the guest’s last day or on their scheduled check-out day.</p>
+
+		  <div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1yHIL9dZ1dtjfJP5xzV-F3VxIs3eKa2aM/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>
+		  
+	<!-- ACCORDION 1 -->
+    <details class="accordion"
+             id="1. Locate the Guest Reservation"
+             data-title="1. Locate the Guest Reservation"
+             data-keywords="1. Locate the Guest Reservation">
+      <summary>1. Locate the Guest Reservation</summary>
+      <div class="card">
+			<ul>
+				<li>Search for the guest’s reservation in GOKI using their name or booking ID.</li>
+				<li>Confirm you have the correct booking before making changes.</li>
+			</ul>
+	  </div>
+    </details> 
+
+	<!-- ACCORDION 2 -->
+    <details class="accordion"
+             id="2. Update Booking Details"
+             data-title="2. Update Booking Details"
+             data-keywords="2. Update Booking Details">
+      <summary>2. Update Booking Details</summary>
+      <div class="card">
+			<ul>
+				<li>SearchClick “Create” to start the extension process.</li>
+				<li>Change the status of the booking to “Check-In”.</li>
+				<li>Update guest details as needed.</li>
+			</ul>
+		<p><b>Important</b>: If you are extending into a previous day (to avoid key issues), make sure:</p>
+			<ul>
+				<li>Overlapping dates are handled correctly. For example, if the guest’s current check-out is January 2, change the start of the extended booking to January 1.</li>
+				<li>This ensures the key automatically activates at 3 PM and the guest retains access without interruptions.</li>
+			</ul>
+	  </div>
+    </details>
+	
+	<!-- ACCORDION 3 -->
+    <details class="accordion"
+             id="3. Generate Key & Confirmation"
+             data-title="3. Generate Key & Confirmation"
+             data-keywords="3. Generate Key & Confirmation">
+      <summary>3. Generate Key & Confirmation</summary>
+      <div class="card">
+			<ul>
+				<li>Click “Update” to save the extended booking.</li>
+				<li>Click the three dots in GOKI to generate the confirmation and door PIN.</li>
+			</ul>
+	  </div>
+    </details>
+	
+	<!-- ACCORDION 4 -->
+    <details class="accordion"
+             id="4. Communicate with the Guest"
+             data-title="4. Communicate with the Guest"
+             data-keywords="4. Communicate with the Guest">
+      <summary>4. Communicate with the Guest</summary>
+      <div class="card">
+			<ul>
+				<li>Copy the confirmation and PIN into the Extension Message Template.</li>
+				<li>Send to the guest using the extension message template to ensure they receive all updated check-in information.</li>
+			</ul>
+	  </div>
+    </details>
+	
+	<!-- ACCORDION 5 -->
+    <details class="accordion"
+             id="5. Verification"
+             data-title="5. Verification"
+             data-keywords="5. Verification">
+      <summary>5. Verification</summary>
+      <div class="card">
+			<ul>
+				<li>Double-check that the dates, guest details, and PIN are correct.</li>
+				<li>Make sure the guest has confirmed receipt of the extension message.</li>
+			</ul>
+	  </div>
+    </details>
+	
+</section>
+
+<section class="docSection" data-process-id="check-in-3" data-tags="How to Create a New Booking" data-title="How to Create a New Booking">
+      <h2>How to Create a New Booking</h2>
+
+      <details class="accordion" id="accordion-14-4"
+               data-title="Step-by-step checklist"
+               data-keywords="How to Create a New Booking">
+		<summary>Instruction</summary>
+	  <div class="card">
+		<p>In this session, we’ll walk through how to create a new booking in Cloudbeds. While the process is straightforward, it’s important to follow each step carefully to avoid errors.</p>
+
+		  <div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1GA3SoxPAWWivXdyUUE39ljz7gyiXR7U9/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>
+		  
+	<!-- ACCORDION 1 -->
+    <details class="accordion"
+             id="Ways to create new booking"
+             data-title="Ways to create new booking"
+             data-keywords="Ways to create new booking">
+      <summary>Ways to create new booking</summary>
+      <div class="card">
+	  <h4>There are several ways to create a new reservation in Cloudbeds:</h4>
+			<ul>
+				<li>Click the <b>+ plus icon</b> on the left-hand menu.</li>
+				<li>Create a booking directly from the calendar by selecting the guest’s check-in and check-out dates.</li>
+				<li>Use the <b>plus (+) icon beside the calendar</b>, which will take you directly to the reservation page.</li>
+			</ul>
+       <p>Once on the reservation page, start by selecting the <b>booking source</b>.</p>
+	   <p>Next, select the <b>check-in and check-out dates</b>, then click <b>Search</b> to view available beds across all properties.
+	   Choose the appropriate property and <b>room type</b>. If the guest has a voucher or approved discount,
+	   you may adjust the room rate with <b>management approval</b>, then click <b>Apply</b>.</p>
+	   <p>Enter the number of guests, indicate if there is a child, select the number of rooms, and click <b>Add</b>.
+	   The selected room will appear on the left-hand side. If needed, you can remove it using the <b>X</b> button.</p>
+	   <p>Proceed to enter the <b>guest details</b>, including first name, last name, email, and phone number.
+	   If the guest has stayed with us before, their profile may auto-populate. Review the details,
+	   then continue to <b>Confirm and Pay</b></p>
+	   <p>On the payment page, review the reservation and accommodation summary. For payment, always select “<b>credit card</b>”.
+	   If a card is already saved on file, it will appear automatically. Once everything is correct, confirm the reservation.</p>
+	   <p><b>Important notes:</b></p>
+		<ul>
+			<li>Cash payments are not accepted unless approved by management.</li>
+			<li>If you encounter any issues with the reservation or payment, contact management immediately.</li>
+		</ul>
+		<p>That’s how to successfully create a new booking in Cloudbeds.</p>
+		
+	  </div>
+    </details>   
+</section>
+
+<section class="docSection" data-process-id="check-in-4" data-tags="Booking Transfer SOP" data-title="Booking Transfer SOP">
+      <h2>Booking Transfer SOP</h2>
+
+      <details class="accordion" id="accordion-14-5"
+               data-title="Step-by-step checklist"
+               data-keywords="How to Create a New Booking">
+		<summary>SOP</summary>
+	  <div class="card">
+		<p>This process is used whenever a guest’s booking needs to be moved from one property to another.
+		The goal is to make sure the guest understands and agrees to the transfer, pricing is handled correctly, and both properties are properly informed.</p>
+		<p>A booking transfer may be required if the booked room type becomes unavailable,
+		the property is fully booked, or the guest has requested to move. Always confirm the reason first before offering a transfer.</p>
+		<p>Once the need is confirmed, clearly explain the situation to the guest. Let them know why the transfer is needed,
+		the name and location of the new property, and the room type they will receive, including any differences.
+		The guest must explicitly agree before anything is processed. Make sure they understand that room types may vary,
+		rates and policies can change, and  rules still apply.</p>
+		
+		
+		  <div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1EjEWTwYgmlwq4QM1baYyowzrs8VCxX9I/preview "
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>
+		  
+	<!-- ACCORDION 1 -->
+    <details class="accordion"
+             id="How to transfer a booking"
+             data-title="How to transfer a booking"
+             data-keywords="How to transfer a booking">
+      <summary>How to transfer a booking</summary>
+      <div class="card">
+       <p>Once the need is confirmed, clearly explain the situation to the guest. Let them know why the transfer is needed, the name and location of the new property,
+	   and the room type they will receive, including any differences. The guest must explicitly agree before anything is processed.
+	   Make sure they understand that room types may vary, rates and policies can change, and  rules still apply.</p>
+	   <p>After the guest agrees, secure availability at the new property by placing a courtesy hold.
+	   Double-check the dates, room type, and availability before proceeding.</p>
+	   <p>Next, create the new booking using the guest’s full name, contact details, stay dates, and the agreed room type.</p>
+	   <p>Confirm that all details match what was approved by the guest.</p>	   
+	   <p>Review the pricing carefully. If the new booking is cheaper, the original booking remains  and no refund is issued,if the transfer is not caused by Azzurro Error.
+	   If the new booking is more expensive, the guest must pay the difference before the transfer is finalized. In all cases, the guest’s acknowledgment of any pricing changes must be documented.</p>
+	   <p>Once everything is confirmed, move the original booking to TEST or the designated transfer status and add a clear note explaining where the booking was transferred and why.
+	   Add a corresponding note to the new booking indicating that it was transferred from another property.</p>
+	   <p>Finally, notify the Property Guest Coordinator with the guest details, old and new property information,
+	   stay dates, and room number. Before closing the task, confirm that notes are complete, payment (if required) is settled, and both properties are fully informed.</p>
+	   
+	   <h4>Cause of Transfer & Downgrade Policy (Summary)</h4>
+		<ul>
+			<li>Azzurro-Caused Transfer (e.g., overbooking, maintenance)</li>
+				<ul>
+					<li>Any price difference or refund is handled per management.</li>
+					<li>Refunds are not automatic; approval must be documented.</li>
+				</ul>
+			<li>Guest-Requested Transfer</li>
+				<ul>
+					<li>Original booking stays non-refundable.</li>
+					<li>No repricing for cheaper rooms; guest pays extra for upgrades.</li>
+				</ul>
+			<li>Downgrade Policy</li>
+				<ul>
+					<li>Refunds only if Azzurro caused the issue and approved.</li>
+					<li>Otherwise, offer credit, upgrade, or relocation instead of a refund.</li>
+				</ul>
+		</ul>
+		<p><b>Key Point</b>: Always identify the cause first to ensure correct pricing, approvals, and clear communication with the guest.</p>
+		
+	  </div>
+    </details>   
+</section>
+
+<section class="docSection" data-process-id="No-Show SOP" data-tags="No-Show SOP" data-title="No-Show SOP">
+      <h2>No-Show SOP</h2>
+
+      <details class="accordion" id="accordion-14-6"
+               data-title="How to Create a New Booking"
+               data-keywords="How to Create a New Booking">
+		<summary>SOP</summary>
+	  <div class="card">
+		<p>The no-show policy ensures that reservations are honored, revenue is protected, and proper communication is maintained with guests who fail to arrive.</p>
+		
+		  <div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1YtSkFqJb6fVRGD69B_3_Mj8TBllhx7f3/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>
+		
+		<p>A guest will be marked as a no-show under any of the following circumstances:</p>
+			<ol>
+				<li>Failure to Arrive Without Notice</li>
+					<ul>
+						<li>The guest does not check in on the scheduled arrival date and has not informed Azzurro Hotels of any cancellation or modification.</li>
+					</ul>
+				<li>Refusal to Stay Despite Resolution Efforts</li>
+					<ul>
+						<li>The guest arrives but declines to stay after reasonable efforts have been made to resolve any concerns.</li>
+					</ul>
+				<li>Failure to Meet Age Requirements</li>
+					<ul>
+						<li>The guest does not meet the age policy requirements and has not canceled the booking in advance.</li>
+					</ul>	
+			</ol>
+		  
+	<!-- ACCORDION 1 -->
+    <details class="accordion"
+             id="No-Show Booking Actions"
+             data-title="No-Show Booking Actions"
+             data-keywords="No-Show Booking Actions">
+      <summary>No-Show Booking Actions</summary>
+      <div class="card">
+       <h4>Once a guest meets the no-show criteria:</h4>
+		<ul>
+			<li>The reservation is marked as a no-show the day after the scheduled check-in date if the guest has not arrived or provided any updates.</li>
+			<li>The guest will be informed of their no-show status and that no refund will be processed according to Azzurro Hotels’ non-refundable policy.</li>
+			<li>The room or bed may be released and resold once the no-show is confirmed.</li>
+		</ul>
+	   <p>This ensures smooth occupancy management and reduces revenue loss from unclaimed reservations.</p> 	
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 2 -->
+    <details class="accordion"
+             id="Guest Notification Templates"
+             data-title="Guest Notification Templates"
+             data-keywords="Guest Notification Templates">
+      <summary>Guest Notification Templates - Before Marking as No-Show</summary>
+      <div class="card">
+       <h4>Before Marking as No-Show</h4>
+	   <p><b>Subject: Follow-Up on Your Check-In – Azzurro Pod Hotel</b></p>
+	   <p>Dear [Guest's Name],</p>
+	   <p>We hope you’re doing well.</p>
+	   <p>We’re reaching out to confirm whether you were able to check in yesterday. If you encountered any issues or have any updates regarding your reservation, please let us know—we’d be happy to assist.</p>
+	   <p>If we don’t hear back from you soon, we may need to mark your booking as a no-show.</p>
+	   <p>Best regards,</p>
+	   <p>Azzurro Pod Hotel</p>
+	  </div>
+    </details> 
+	
+	<!-- ACCORDION 3 -->
+    <details class="accordion"
+             id="Guest Notification Templates-2"
+             data-title="Guest Notification Templates"
+             data-keywords="Guest Notification Templates">
+      <summary>Guest Notification Templates - After Marking as No-Show</summary>
+      <div class="card">
+       <h4>After Marking as No-Show</h4>
+	   <p><b>Subject: No-Show Status – Azzurro Pod Hotel</b></p>
+	   <p>Dear [Guest's Name],</p>
+	   <p>We hope you’re doing well.</p>
+	   <p>We noticed that you did not check in on your scheduled arrival date and have not provided any updates regarding your reservation. As a result, we have marked your booking as a no-show in accordance with our policy.</p>
+	   <p>Unfortunately, per our terms, no refunds can be processed for no-show reservations. If you have any concerns or require further clarification, please feel free to reach out.</p>
+	   <p>Best regards,</p>
+	   <p>Azzurro Pod Hotel</p>
+	  </div>
+    </details> 
+	
+</section>
+
+
+<section class="docSection" data-process-id="Overbooking Protocol" data-tags="Overbooking Protocol" data-title="Overbooking Protocol">
+      <h2>Overbooking Protocol</h2>
+
+      <details class="accordion" id="accordion-14-7"
+               data-title="Overbooking Protocol"
+               data-keywords="Overbooking Protocol">
+		<summary>Instruction</summary>
+	  <div class="card">
+		<p>Overbooking happens when more reservations are accepted than there are rooms available. The goal is to handle it quickly, professionally, and with minimal disruption to the guest. Clear communication, alternatives, and follow-up are key.</p>
+		
+		  <div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1MUdKk_JoNeW_o89tSmuamsosqQ9CwcMh/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>
+		  
+	<!-- ACCORDION 1 -->
+    <details class="accordion"
+             id="1. Identify and Handle Overbooking Cases"
+             data-title="1. Identify and Handle Overbooking Cases"
+             data-keywords="1. Identify and Handle Overbooking Cases">
+      <summary>1. Identify and Handle Overbooking Cases</summary>
+      <div class="card">
+       <p>When an overbooking occurs, first determine the cause and available solutions. Check the reservation system (Cloudbeds) to identify why the overbooking happened. Common causes include:</p>
+		<ul>
+			<li>OTA system delay – bookings accepted after closeout</li>
+			<li>Incorrect inventory update – beds shown as available were not actually vacant</li>
+			<li>Manual entry error – staff double-booked a bed</li>
+			<li>Double allocation – same bed assigned to multiple guests</li>
+			<li>Partner website syncing issue – availability not updated correctly</li>
+		</ul>
+	   <p>Verify timestamps in Cloudbeds and OTA logs to understand when and how the overbooking occurred.</p>
+	   <p>Next, assess alternatives:</p>
+	   <ul>
+			<li>Check if other Azzurro properties have available beds.</li>
+			<li>Offer the guest one of the following options:
+<ul>
+					<li>Upgrade: higher room category at the same rate</li>
+					<li>Downgrade: lower room category with refund of price difference</li>
+					<li>Relocation: booking at another Azzurro property</li>
+				</ul>
+</li>
+		</ul>
+		<p>- Refunds are NOT automatic.</p>
+		<p>Azzurro policy:</p>
+		<ul>
+			<li>No refunds unless caused by Azzurro error AND approved</li>
+			<li>Otherwise: credit, upgrade, or relocation preferred</li>
+			<li>“Any refund or partial refund must be approved by management.”</li>
+		</ul>
+		<p>If no Azzurro properties are available, suggest suitable nearby accommodations.</p>
+		<p>Then, contact the guest immediately:</p>
+			<ul>
+				<li>Call and explain the overbooking clearly.</li>
+				<li>Apologize for the inconvenience and acknowledge their situation.</li>
+				<li>Present the available options and reassure them that their booking is valid.</li>
+			</ul>
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 2 -->
+    <details class="accordion"
+             id="2. Notify the Guest Promptly"
+             data-title="2. Notify the Guest Promptly"
+             data-keywords="2. Notify the Guest Promptly">
+      <summary>2. Notify the Guest Promptly</summary>
+      <div class="card">
+       <p>Use email templates depending on the solution offered:</p>
+	   <h3>Upgrade to a Different Room Type</h3>
+	   <p><b>Subject:</b> Important Update Regarding Your Stay at Azzurro Hotels</p>
+	   <p>Dear [Guest's Name],</p>
+	   <p>We hope you’re doing well.</p>
+	   <p>Due to a system overbooking, we are unable to provide the room type you originally booked. We have arranged an upgraded room at no extra cost. Your booking remains active.</p>
+	   <p>Please confirm if you’d like to proceed or if you prefer a cancellation free of charge.</p>
+	   <p>Best regards,</p>
+	   <p>Azzurro Pod Hotel</p>
+	   <h3>Alternative Room with Price Adjustment</h3>
+	   <p><b>Subject:</b> Important Update Regarding Your Stay at Azzurro Hotels</p>
+	   <p>Dear [Guest's Name],</p>
+	   <p>We hope you’re doing well.</p>
+	   <p>Due to a system overbooking, your original room is unavailable. We have an alternative room available and will refund the price difference of [$X AUD].</p>
+	   <p>Please confirm if you’d like to proceed or if you prefer a cancellation free of charge.</p>
+	   <p>Best regards,</p>
+	   <p>Azzurro Pod Hotel</p>
+	   <h3>Relocation to Another Azzurro Property</h3>
+	   <p><b>Subject:</b> Important Update Regarding Your Stay at Azzurro Hotels</p>
+	   <p>Dear [Guest's Name],</p>
+	   <p>We hope you’re doing well.</p>
+	   <p>Due to a system overbooking, we cannot accommodate your stay at [original property]. A room has been secured at [new property].</p>
+	   <p>Please confirm if you’d like to proceed or if you prefer a cancellation free of charge.</p>
+	   <p>Best regards,</p>
+	   <p>Azzurro Pod Hotel</p>
+	  </div>
+    </details> 
+	
+	<!-- ACCORDION 3 -->
+    <details class="accordion"
+             id="3. Arrange Logistics Based on Guest’s Choice"
+             data-title="3. Arrange Logistics Based on Guest’s Choice"
+             data-keywords="3. Arrange Logistics Based on Guest’s Choice">
+      <summary>3. Arrange Logistics Based on Guest’s Choice</summary>
+      <div class="card">
+			<ul>
+				<li>If they accept the new room:
+<ul>
+						<li>Confirm the change in the system.</li>
+						<li>No refund or compensation if it’s an upgrade.</li>
+						<li>Refund partial difference if it’s a downgrade.</li>
+					</ul>
+</li>
+				<li>If they accept relocation:
+<ul>
+						<li>Book the alternative property.</li>
+						<li>Arrange transport to the new property.</li>
+						<li>Coordinate with the new property for a smooth check-in.</li>
+					</ul>
+</li>
+				<li>If they decline:
+<ul>
+						<li>Cancel the booking free of charge.</li>
+						<li>Confirm cancellation in writing.</li>
+					</ul>
+</li>
+			</ul>
+	  </div>
+    </details> 
+	
+	<!-- ACCORDION 4 -->
+    <details class="accordion"
+             id="4. Documentation & Follow-Up"
+             data-title="4. Documentation & Follow-Up"
+             data-keywords="4. Documentation & Follow-Up">
+      <summary>4. Documentation & Follow-Up</summary>
+      <div class="card">
+			<ul>
+				<li>Record all changes in the system:
+<ul>
+						<li>Reason for overbooking.</li>
+						<li>Alternative option provided.</li>
+						<li>Compensation (if any).</li>
+						<li>Guest’s final decision.</li>
+					</ul>
+</li>
+				<li>Follow up after check-in to ensure guest satisfaction.</li>	
+			</ul>
+	  </div>
+    </details> 
+	
+</section>
+
+<section class="docSection" data-process-id="General Complaint Protocol" data-tags="General Complaint Protocol" data-title="General Complaint Protocol">
+      <h2>General Complaint Protocol</h2>
+
+      <details class="accordion" id="accordion-14-8"
+               data-title="General Complaint Protocol"
+               data-keywords="General Complaint Protocol">
+		<summary>Azuro Hotels – Complaint, Incident, Refund & Escalation Protocols</summary>
+	  <div class="card">
+		<p>This video walks you through our <b>Complaint, Noise, Incident, Refund, and Escalation protocols</b>.</p>
+		<p>Our goal is simple: to address every guest concern <b>promptly, empathetically, and professionally,</b> while protecting both guest satisfaction and Azuro Hotels’ standards.</p>
+		
+		  <div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1pu0zzTGDfcZIa1oqkvoMVEUVtF-FoJ9u/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>
+		  
+	<!-- ACCORDION 1 -->
+    <details class="accordion"
+             id="1. General Complaint Protocol"
+             data-title="1. General Complaint Protocol"
+             data-keywords="1. General Complaint Protocol">
+      <summary>1. General Complaint Protocol</summary>
+      <div class="card">
+       <h3>Active Listening & Empathy</h3>
+		<p>First—listen fully. Allow the guest to speak without interruption.</p>
+		<p>Acknowledge their feelings using phrases like:</p>
+			<ul>
+				<li><i>I understand how this could be frustrating for you.</i></li>
+			</ul>
+		<p>Investigate & Understand</p>
+			<ul>
+				<li>Ask clarifying questions to understand the real issue.
+				Is this a misunderstanding, or is there something else going on?</li>
+			</ul>
+		<p>Explain the Policy</p>
+			<ul>
+				<li>Calmly explain the policy and why it exists—focus on guest safety, comfort, and fairness.
+				Be transparent, not defensive.</li>
+			</ul>
+		<p>Offer Solutions</p>
+			<ul>
+				<li>If possible, offer alternatives such as vouchers, upgrades, or adjustments.
+				If not, apologize sincerely and explain why options are limited.</li>
+			</ul>
+		<p>Escalation & Documentation</p>
+			<ul>
+				<li>For unresolved or complex concerns, escalate to management.
+				Always document the complaint in Notion, and inform the guest that
+				their concern has been forwarded for review.</li>
+			</ul>
+		<p>Follow-up</p>
+			<ul>
+				<li>After resolution, follow up with the guest.
+				Their feedback helps us improve our policies.</li>
+			</ul>
+		<p><b>Core Message to Remember:</b></p>
+		<p><i>I’m sorry for any inconvenience caused by our policy. It’s in place to ensure your stay is safe and comfortable.
+		I understand this may feel restrictive, and I’d like to explore possible solutions.</i></p>
+	  </div>
+	 </details>
+	 
+	<!-- ACCORDION 2 -->
+    <details class="accordion"
+             id="2. Noise Complaint Handling"
+             data-title="2. Noise Complaint Handling"
+             data-keywords="2. Noise Complaint Handling">
+      <summary>2. Noise Complaint Handling</summary>
+      <div class="card">
+       <h3>Let’s cover noise complaints, our aim is to restore peace quickly</h3>
+		
+		<p>Acknowledge & Empathize</p>
+			<ul>
+				<li><i>Listen without interruption.
+				Say: ‘I’m sorry you’re experiencing noise disturbances.
+				I understand how frustrating that must be.</i></li>
+			</ul>
+		<p>Gather Information</p>
+			<ul>
+				<li>Ask where the noise is coming from and when it started.
+				Determine whether it’s from another guest, the building, or outside.</li>
+			</ul>
+		<p>Investigate & Act</p>
+			<ul>
+				<li>If it’s guest noise, validate with staff and politely remind the responsible guest about quiet hours.</li>
+				<li>If it’s building noise, look for temporary solutions.</li>
+				<li>If it’s external, offer room or bed changes when possible.</li>
+			</ul>
+		<p>Follow-up</p>
+			<ul>
+				<li>Always follow up with the complainant.
+				Thank them for their patience and confirm if they’re now comfortable.</li>
+			</ul>
+		<p>Escalation & Documentation</p>
+			<ul>
+				<li>For unresolved or complex concerns, escalate to management.
+				Always document the complaint in Notion, and inform the guest that
+				their concern has been forwarded for review.</li>
+			</ul>
+		<p>Document</p>
+			<ul>
+				<li>Record the complaint and actions in Notion.
+				If unresolved and severe, management may approve compensation.</li>
+			</ul>
+	 
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 3 -->
+    <details class="accordion"
+             id="3. Incident Report Protocol"
+             data-title="3. Incident Report Protocol"
+             data-keywords="3. Incident Report Protocol">
+      <summary>3. Incident Report Protocol</summary>
+      <div class="card">
+       <h3>Next is incident reporting, this is critical for safety and records.</h3>
+		
+		<p>Immediate Response</p>
+			<ul>
+				<li><i>Ensure everyone’s safety first.
+				Contact emergency services if needed and inform management.
+				Secure the area and separate witnesses.</i></li>
+			</ul>
+		<p>Documentation</p>
+			<ul>
+				<li>The first staff member on scene must complete the Azuro Incident Report Form.
+				nclude guest details, date, summary, fault assessment, and actions taken.</li>
+				<li>Always attach evidence, photos, videos, CCTV, and full conversation screenshots.</li>
+			</ul>
+		<p>Incident-Specific Notes</p>
+			<ul>
+				<li>Staff threats: document behavior and actions.</li>
+				<li>Police attendance: record officer details and case number.</li>
+				<li>Property damage: include photos, safety checks, costs, and liability.</li>
+			</ul>
+		<p>Investigation & Resolution</p>
+			<ul>
+				<li>An investigator reviews evidence and CCTV, gathers statements, and determines the cause.
+				Management then decides on compensation, repairs, or policy updates.</li>
+			</ul>
+		<p>Follow-up & Reporting</p>
+			<ul>
+				<li>Communicate outcomes to affected guests when appropriate.
+				All reports are confidential and securely stored.</li>
+			</ul>
+	 
+	  </div>
+    </details>   
+	
+	<!-- ACCORDION 4 -->
+    <details class="accordion"
+             id="4. Refund & Cancellation Policy"
+             data-title="4. Refund & Cancellation Policy"
+             data-keywords="4. Refund & Cancellation Policy">
+      <summary>4. Refund & Cancellation Policy</summary>
+      <div class="card">
+       <h3>Now let’s clarify refunds and cancellations.</h3>
+		
+		<h4>Step 1: Filing a Refund Complaint</h4>
+			<ul>
+				<li>To request a refund, guests must provide:
+				Property, room and bed, full name, stay dates, amount paid, complaint details,
+				identified fault, and proposed solution.</li>
+				<li>For refund requests, please inform the guest that approvals are handled by the owner overseas
+				and may take 7–10 business days. If the guest prefers not to wait, offer a credit voucher instead.
+				Once confirmed, notify Ms. Shella or Sir Florence so we can issue the voucher for the guest.</li>
+			</ul>
+		<h4>Step 2: Refund Eligibility</h4>
+		<p><b>Refundable cases include:</b></p>
+			<ul>
+				<li>Unallocated beds</li>
+				<li>Property-fault complaints</li>
+				<li>Property-initiated cancellations and</li>
+				<li>Guests aged 50+ without available bottom bunks</li>
+			</ul>
+		<p><b>Non-refundable cases include:</b></p>
+			<ul>
+				<li>Change of plans</li>
+				<li>Late arrivals after 10 PM</li>
+				<li>Misbehavior</li>
+				<li>Advertising claims without fault</li>
+				<li>Platform non-refundable bookings</li>
+			</ul>
+		<p>For Booking.com, Agoda, and Expedia:
+		Non-refundable means no refund.
+		Refundable bookings allow cancellation up to 48 hours before check-in.</p>
+			
+		<p><b>Age Policy Reminder</b></p>
+			<ul>
+				<li>Guests aged 50+ are offered a bottom bunk, or free cancellation if unavailable.
+				Never mention ‘over-age’ in correspondence.</li>
+			</ul>
+		<p><b>No-Shows</b></p>
+			<ul>
+				<li>A no-show applies if guests don’t arrive, decline to stay after resolution, or fail age requirements without canceling.</li>
+				<li>For Australian accounts, we need account name, BSB, and account number.
+				For international refunds, we use WISE only—processing takes 5–10 business days.
+				We do not do direct international bank transfers.</li>
+			</ul>
+	 
+	  </div>
+    </details> 
+
+	<!-- ACCORDION 5 -->
+    <details class="accordion"
+             id="5. Complaint Escalation Process"
+             data-title="5. Complaint Escalation Process"
+             data-keywords="5. Complaint Escalation Process">
+      <summary>5. Complaint Escalation Process</summary>
+      <div class="card">
+       <h3>When issues escalate, structure is essential.</h3>
+		
+		<h4>Collect Information</h4>
+			<ul>
+				<li>Use the Complaint Escalation Form.
+				Capture location, guest details, stay dates,
+				amount paid, issue type, and whether it’s ongoing.</li>
+			</ul>
+		<h4>Evidence & Reporting</h4>
+			<ul>
+				<li>Upload all evidence—photos, videos, and screenshots—into Notion under New Complaint / New Issue.</li>
+				<li>Share the Notion link in the Complaint Action Group and raise it to management.</li>
+				<li>Always use this template when you escalate <a href="https://www.notion.so/Complaint-Escalation-form-template-17528baad209813d9a98ca5f54f4e63d">Escalation Template</a> </li>
+			</ul>
+		
+		<h4>When to Escalate</h4>
+		<p>Escalate when:</p>
+			<ul>
+				<li>Guests repeat arguments</li>
+				<li>Use aggressive language</li>
+				<li>Reject explanations and</li>
+				<li>Leave negative comments</li>
+			</ul>
+	
+		<p><b>Use phrases like:</b></p>
+		<p><i>It seems I’m not explaining this well, may I pass this to my manager?</i></p>
+		<h4>CCTV Requests</h4>
+			<ul>
+				<li>Provide hostel name, guest details, room, bed, date, time, item, and location.
+				Set expectations that CCTV reviews take time, and cameras are not in rooms or bathrooms.</li>
+			</ul>
+		<h4>Blacklisting</h4>
+			<ul>
+				<li>Guests may be blacklisted if they pose safety risks or show aggressive behavior.
+				These cases are reported to Booking.com.</li>
+			</ul>
+	 
+	  </div>
+    </details> 
+
+	
+	<!-- ACCORDION 6 -->
+    <details class="accordion"
+             id="6. Billing & Payment Concerns"
+             data-title="6. Billing & Payment Concerns"
+             data-keywords="6. Billing & Payment Concerns">
+      <summary>6. Billing & Payment Concerns</summary>
+      <div class="card">
+       <p>For billing issues, always stay calm and empathetic.</p>
+	   <p>Use phrases like:</p>
+			<ul>
+				<li>’I’m sorry for the confusion—let’s look into this together.’
+				Then investigate thoroughly and document the outcome.</li>
+			</ul>
+		<p>By following these protocols, we ensure consistency, safety, and professionalism, while protecting both our guests and Azuro Hotels.</p>
+			
+	  </div>
+    </details> 
+	
+	
+</section>
+
+<section class="docSection" data-process-id="Encourage Guest Reviews" data-tags="Encourage Guest Reviews" data-title="Encourage Guest Reviews">
+      <h2>Encourage Guest Reviews</h2>
+
+      <details class="accordion" id="accordion-14-9"
+               data-title="Encourage Guest Reviews"
+               data-keywords="Encourage Guest Reviews">
+		<summary>How to Encourage Guest Reviews on Google & Booking.com</summary>
+	  <div class="card">
+		<p>This video will walk you through when and how to ask guests for reviews on Google and Booking.com—in a natural, polite, and professional way.</b>.</p>
+		<p>Reviews directly impact our bookings, staff recognition, and business growth, so every positive guest interaction is an opportunity—if handled correctly.</p>
+		
+		  <div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1t0UnC8Key6SSUoICaJ4OH6-RonAU-_h-/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>
+		  
+	<!-- ACCORDION 1 -->
+    <details class="accordion"
+             id="PART 1: Why Reviews Matter"
+             data-title="PART 1: Why Reviews Matter"
+             data-keywords="PART 1: Why Reviews Matter">
+      <summary>PART 1: Why Reviews Matter</summary>
+      <div class="card">
+       <h3>PART 1: Why Reviews Matter</h3>
+		<p>Our goal is never to pressure guests, but to invite feedback when they’re already happy.</p>
+		<p>Positive reviews help us:</p>
+			<ul>
+				<li>Build trust with future guests</li>
+				<li>Increase bookings and visibility</li>
+				<li>Recognize staff performance</li>
+				<li>Strengthen our reputation as a business</li>
+			</ul>
+
+	  </div>
+	 </details>
+	 
+	<!-- ACCORDION 2 -->
+    <details class="accordion"
+             id="PART 2: When to Ask for a Review"
+             data-title="PART 2: When to Ask for a Review"
+             data-keywords="PART 2: When to Ask for a Review">
+      <summary>PART 2: When to Ask for a Review</summary>
+      <div class="card">
+       <h3>PART 2: When to Ask for a Review</h3>
+		<p>1. During Check-In</p>
+		<p>During check-in, focus first on service—not reviews.</p>
+		<p>What to do:</p>
+			<ul>
+				<li>Greet the guest warmly</li>
+				<li>Explain room details clearly</li>
+				<li>Offer help proactively</li>
+			</ul>
+		<p><b>Once the guest is settled, you may say:</b></p>
+		<p><i>If there’s anything you need during your stay, just let us know. And if you’re happy with the check-in, we’d really appreciate a quick Google review—it helps support our small business</i></p>
+		<p>Keep it light</p>
+		<p>No pressure</p>
+		<p> and say this just once</p>
+		
+		<p>2. While Assisting Guests During Their Stays</p>
+		<p>This is the best moment to ask. While Assisting Guests During Their Stay
+			Always thank them personally and never ask twice in one interaction.</p>
+		<p>Examples of happy moments are:</p>
+			<ul>
+				<li>You solved a problem</li>
+				<li>You gave directions or recommendations</li>
+				<li>You assisted with bookings or extensions</li>
+			</ul>
+		<p><b>What to say:</b></p>
+		<p><i>If you haven’t left a review yet, we’d really appreciate one. It truly helps us a lot.</i></p>
+		<p><b>If they already left one:</b></p>
+		<p><i>Thank you so much—we really appreciate it.</i></p>
+		
+		<p>3. During Check-Out</p>
+		<p>Check-out is another natural moment, guests are reflecting on their stay.</p>
+		<p><b>What to say:</b></p>
+		<p><i>Thank you for staying with us! If you have a moment, a quick Google review would mean so much to us.</i></p>
+		<p><b>Optional:</b></p>
+		<p><i>If possible, send the review link via message for convenience.</i></p>
+		<p>Now that you know when to ask, let’s listen to a real example of how a receptionist naturally asks a guest for a review.</p>
+		<p>Notice the tone, it’s polite, relaxed, and not pushy.</p>
+			<ul><li>Play Ms. Shella’s recording</li></ul>
+		<p>This example was during check-out. This is exactly how we want review requests to sound. The same approach applies during check-in or while assisting a guest, timing and tone are key.</p>
+		<p>What worked well here was:</p>
+			<ul>
+				<li>The request was made after the guest expressed satisfaction</li>
+				<li>The tone was friendly and confident</li>
+				<li>The receptionist didn’t pressure the guest</li>
+				<li>The request was short and natural</li>
+			</ul>
+		
+	  </div>
+	 </details>
+	 
+	<!-- ACCORDION 3 -->
+    <details class="accordion"
+             id="PART 3: Post-Stay Follow-Up (2 Days After Check-Out)"
+             data-title="PART 3: Post-Stay Follow-Up (2 Days After Check-Out)"
+             data-keywords="PART 3: Post-Stay Follow-Up (2 Days After Check-Out)">
+      <summary>PART 3: Post-Stay Follow-Up (2 Days After Check-Out)</summary>
+      <div class="card">
+       <h3>PART 3: Post-Stay Follow-Up (2 Days After Check-Out)</h3>
+		<p>Two days after check-out, we send a polite follow-up message.</p>
+		<p><i>‘Hi ___, we hope you enjoyed your stay with us! If there’s anything we could improve, please let us know.
+		If you had a great time, we’d truly appreciate a quick Google review, your feedback really helps us.’</i></p>
+		<p>Friendly</p>
+		<p>Balanced (feedback + review)</p>
+		<p>Not demanding</p>
+
+	  </div>
+	 </details>
+	
+	<!-- ACCORDION 4 -->
+    <details class="accordion"
+             id="PART 4: Booking.com Review Engagement"
+             data-title="PART 4: Booking.com Review Engagement"
+             data-keywords="PART 4: Booking.com Review Engagement">
+      <summary>PART 4: Booking.com Review Engagement</summary>
+      <div class="card">
+       <h3>PART 4: Booking.com Review Engagement - "Live Reception Only"</h3>
+		<p>Only encourage Booking.com reviews if the guest booked through Booking.com.</p>
+		<p><b>When a guest gives positive feedback verbally, via message, or on Google:</b></p>
+			<ol>
+				<li>Confirm the booking source</li>
+				<li>Thank them for their feedback and</li>
+				<li>Encourage them politely to share it on Booking.com</li>
+			</ol>
+		<p><b>What to say:</b></p>
+		<p><i>‘Thank you so much for your feedback! If you booked through Booking.com, we’d really appreciate
+		it if you could share your experience there as well—it helps recognize staff efforts and supports our business.’</i></p>
+
+	  </div>
+	 </details>
+	 
+	<!-- ACCORDION 5 -->
+    <details class="accordion"
+             id="PART 5: What NOT to Do"
+             data-title="PART 5: What NOT to Do"
+             data-keywords="PART 5: What NOT to Do">
+      <summary>PART 5: What NOT to Do</summary>
+      <div class="card">
+       <h3>PART 5: What NOT to Do</h3>
+		<p>Reviews must always be voluntary and genuine.s</p>
+			<ol>
+				<li>Don’t pressure guests</li>
+				<li>Don’t ask unhappy guests for reviews</li>
+				<li>Don’t repeat the request multiple times and</li>
+				<li>Don’t promise incentives or rewards</li>
+			</ol>
+
+	  </div>
+	 </details>
+
+	<!-- ACCORDION 6 -->
+    <details class="accordion"
+             id="CLOSING"
+             data-title="CLOSING"
+             data-keywords="CLOSING">
+      <summary>CLOSING</summary>
+      <div class="card">
+       <h3>CLOSING</h3>
+		<p>Every positive interaction is an opportunity—but great service always comes first.</p>
+		<p>Ask naturally, ask politely, and always thank the guest—whether they leave a review or not.</p>
+		<p>Thank you for helping build our reputation, one great guest experience at a time.</p>
+
+	  </div>
+	 </details>
+	 
+</section>
+
+<section class="docSection" data-process-id="Early Shift" data-tags="Early Shift" data-title="Early Shift">
       <h2>Early Shift</h2>
-      <details class="accordion" id="shift-early-sop" data-title="Early Shift SOP" data-keywords="Early Shift SOP">
-        <summary>SOP</summary>
-        <div class="card">
-          <p>Hi, and congratulations! Welcome to this training. If you’re watching this video, it means you’re about to start your shift solo. This also gives you access to all the tools and internal group chats on WhatsApp that you’ll need throughout your shift.</p>
-          <p>Early shifts start at either 7 AM or 8 AM Sydney Time. Before logging in, make sure all your tools are ready. Also, take a moment to check recent announcements, as there may be updates that affect your duties as a receptionist.</p>
-          <p>When you’re ready, send your login time to the “Staff clock in/out” group in Sydney Time.</p>
-          <p>Once logged in and your tools are ready, the first thing to do is check the “HANDOVER (new)” group. Take note of any important endorsements from the previous receptionist on duty.</p>
-          <p>If there are pending check-in endorsements, check if the guest has already arrived. If not, send a follow-up message to the guest. Then reply to the endorsement message accordingly.</p>
-          <p>Next, open the “Azzurro - CHECK IN/CHECK OUTS” group to see the check-in and check-out information for today. Double-check the following against CloudBeds:</p>
-          <ul>
-            <li>Same Room and Bed Extensions</li>
-            <li>Moved Beds</li>
-            <li>Check-ins and Check-outs</li>
-            <li>Empty Beds</li>
-            <li>Borrowed Items</li>
-          </ul>
-          <p>You can paste this info into your internal notes and keep CloudBeds open on the side for verification. If everything is accurate, reply to the message with a ✅. Make updates to your internal notes if necessary and reply with the updated list.</p>
-          <p>Next, prepare a separate internal note to send to your property’s housekeeping group. This should include the list of rooms the cleaners need to prepare. The format is the same as the daily Check-in/Check-out Info, but:</p>
-          <ul>
-            <li>Remove the guest names for check-ins</li>
-            <li>Retain only the room and bed numbers</li>
-            <li>Include a note confirming returned borrowed items at the bottom</li>
-          </ul>
-          <p>If Zoom restarts during your shift, you can ask the cleaner on duty for assistance by sending this prepared message.</p>
-          <ul>
-            <li>Same Room and Bed Extensions</li>
-            <li>Moved Beds</li>
-            <li>Check-ins</li>
-            <li>Last-Minute Check-ins (if applicable)</li>
-          </ul>
-          <p>The early-shift receptionist is responsible for sending updated room details for guests extending their stay. This must be done before <b>10 AM</b>, as their current room access will automatically deactivate at that time.</p>
-          <p><b>Remember</b>: For every action you take, always manually sync it in the Check-ins File by selecting the correct drop-down.</p>
-          <p>For guests checking in, verify if they’ve completed the <b>digital check-in process</b>. Here’s how:</p>
-          <ol>
-            <li>Go to Whistle</li>
-            <li>Click Reservations (top right)</li>
-            <li>Edit filters</li>
-            <li>Select your property</li>
-            <li>Select today’s arrival date</li>
-            <li>Apply changes</li>
-          </ol>
-          <p>For guests who haven’t uploaded a valid Passport/ID, send a reminder. For guests who haven’t started the process at all, send a reminder as well. Be mindful of the message templates you use.</p>
-          <p>Once a guest completes the process, mark Yes for both ID/Passport and Digital Registration.</p>
-          <p>You may only release GOKI access once housekeeping confirms the rooms are made and ready for check-in. This usually happens around 2–3 PM.</p>
-          <p>At exactly 10 AM, check out guests in CloudBeds. Some guests may drop by the reception for check-out. Ask for their room and bed number and check them out immediately. Checked-out guests will change from green to gray in the system.</p>
-          <p>At the end of your shift, send an endorsement to the next receptionist. Send it to the “HANDOVER (new)” group before sending your log-out message to the “Staff clock in/out” group.</p>
-          <p>That covers the main tasks for an early shift. While completing these, you’ll also accommodate guests in real-time and respond to messages across platforms.</p>
-          <p>Good luck, and enjoy your shift!</p>
-        </div>
-      </details>
-    </section>
 
-    <section class="docSection" data-process-id="Afternoon Shift" data-tags="Afternoon Shift" data-title="Afternoon Shift">
+      <details class="accordion" id="accordion-14-10"
+               data-title="Step-by-step checklist"
+               data-keywords="Early Shift">
+		<summary>SOP</summary>
+	  <div class="card">
+		<p>Hi, and congratulations! Welcome to this training. If you’re watching this video, it means you’re about to start your shift solo. This also gives you access to all the tools and internal group chats on WhatsApp that you’ll need throughout your shift.</p>
+		<p>Early shifts start at either 7 AM or 8 AM Sydney Time. Before logging in, make sure all your tools are ready. Also, take a moment to check recent announcements, as there may be updates that affect your duties as a receptionist.</p>
+		<p>When you’re ready, send your login time to the “Staff clock in/out” group in Sydney Time.</p>
+		<p>Once logged in and your tools are ready, the first thing to do is check the “HANDOVER (new)” group. Take note of any important endorsements from the previous receptionist on duty.</p>
+		<p>If there are pending check-in endorsements, check if the guest has already arrived. If not, send a follow-up message to the guest. Then reply to the endorsement message accordingly.</p>
+		<p>Next, open the “Azzurro - CHECK IN/CHECK OUTS” group to see the check-in and check-out information for today. Double-check the following against CloudBeds:</p>
+		  <ul>
+			  	<li>Same Room and Bed Extensions</li>
+			  	<li>Moved Beds</li>
+			  	<li>Check-ins and Check-outs</li>
+			  	<li>Empty Beds</li>
+			  	<li>Borrowed Items</li>
+		  </ul>
+		<p>You can paste this info into your internal notes and keep CloudBeds open on the side for verification. If everything is accurate, reply to the message with a ✅. Make updates to your internal notes if necessary and reply with the updated list.</p>
+		<p>Next, prepare a separate internal note to send to your property’s housekeeping group. This should include the list of rooms the cleaners need to prepare. The format is the same as the daily Check-in/Check-out Info, but:</p>
+		  <ul>
+			  	<li>Remove the guest names for check-ins</li>
+			  	<li>Retain only the room and bed numbers</li>
+			  	<li>Include a note confirming returned borrowed items at the bottom</li>
+		  </ul>
+		<p>If Zoom restarts during your shift, you can ask the cleaner on duty for assistance by sending this prepared message.</p>
+		  <ul>
+			  	<li>Same Room and Bed Extensions</li>
+			  	<li>Moved Beds</li>
+			  	<li>Check-ins</li>
+			  	<li>Last-Minute Check-ins (if applicable)</li>
+		  </ul>
+		<p>The early-shift receptionist is responsible for sending updated room details for guests extending their stay. This must be done before <b>10 AM</b>, as their current room access will automatically deactivate at that time.</p>
+		<p><b>Remember</b>: For every action you take, always manually sync it in the Check-ins File by selecting the correct drop-down.</p>
+		<p>For guests checking in, verify if they’ve completed the <b>digital check-in process</b>. Here’s how:</p>	
+		  <ol>
+			  	<li>Go to Whistle</li>
+			  	<li>Click Reservations (top right)</li>
+			  	<li>Edit filters</li>
+			  	<li>Select your property</li>
+			  	<li>Select today’s arrival date</li>
+			  	<li>Apply changes</li>
+		  </ol>
+		<p>For guests who haven’t uploaded a valid Passport/ID, send a reminder. For guests who haven’t started the process at all, send a reminder as well. Be mindful of the message templates you use.</p>
+		<p>Once a guest completes the process, mark Yes for both ID/Passport and Digital Registration.</p>
+		<p>You may only release GOKI access once housekeeping confirms the rooms are made and ready for check-in. This usually happens around 2–3 PM.</p>
+		<p>At exactly 10 AM, check out guests in CloudBeds. Some guests may drop by the reception for check-out. Ask for their room and bed number and check them out immediately. Checked-out guests will change from green to gray in the system.</p>
+		<p>At the end of your shift, send an endorsement to the next receptionist. Send it to the “HANDOVER (new)” group before sending your log-out message to the “Staff clock in/out” group.</p>
+		<p>That covers the main tasks for an early shift. While completing these, you’ll also accommodate guests in real-time and respond to messages across platforms.</p>
+		<p>Good luck, and enjoy your shift!</p>
+		<p><b>Once everything is synced</b>, go to the Check-ins File and create a new list dated for today. Include:</p>
+<div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1pCl4SqqsO5zozYGvGDGKp4RMpKGZ2wgN/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>
+		  
+	  </div>
+    </details>   
+</section>
+
+<section class="docSection" data-process-id="Afternoon Shift" data-tags="Afternoon Shift" data-title="Afternoon Shift">
       <h2>Afternoon Shift</h2>
-      <details class="accordion" id="shift-afternoon-sop" data-title="Afternoon Shift SOP" data-keywords="Afternoon Shift SOP">
-        <summary>SOP</summary>
-        <div class="card">
-          <p>Welcome back to this training! In this video, we’ll go over your duties for the afternoon shift.</p>
-          <p>The afternoon shift starts at either 3 PM or 4 PM Sydney Time. Before logging in, make sure all your tools are ready. Also, take a moment to review recent announcements, as there may be updates that affect your responsibilities as a receptionist.</p>
-          <p>Once you’re ready, send your login time to the “Staff clock in/out” group in Sydney Time.</p>
-          <p>After that, check the “HANDOVER (new)” group for any important endorsements from the previous receptionist.</p>
-          <p>After acknowledging the endorsement for your property, double-check all pending check-ins in the Check-ins File.</p>
-          <p>Next, verify if these guests have completed the digital check-in process in CloudBeds. Here’s how:</p>
-          <ul>
-            <li>Search the guest’s name</li>
-            <li>Open Reservation Details</li>
-            <li>Go to Documents
-              <ul>
-                <li>From here, you’ll see whether they have uploaded the necessary ID or have completed the process.</li>
-              </ul>
-            </li>
-          </ul>
-          <p>Make any updates in the Check-ins File, if applicable.</p>
-          <p>For guests who have completed the check-in process, release their GOKI access by sending their check-in details.</p>
-          <p>Next, create a list of:</p>
-          <ul>
-            <li>Empty Beds, and</li>
-            <li>Rooms/Beds of Pending Check-ins</li>
-          </ul>
-          <p>Send this list to your property’s housekeeping group chat. Once the scheduled afternoon cleaner logs in, they will send it back to you to confirm if beds are made and ready for check-in, including for last-minute arrivals. You may follow the provided template for this list.</p>
-          <p>As you go through your shift, you'll also need to send a check-in reminder to guests who are checking in the next day. You can do this by copying the reservation name from CloudBeds, pasting it into Whistle, and sending the check-in reminder template. After that, update your list accordingly.</p>
-          <p>At the end of your shift, prepare and send an endorsement for the next receptionist. Send it to the “HANDOVER (new)” group before sending your log-out message to the “Staff clock in/out” group.</p>
-          <p>And that’s it! Those are the main tasks assigned to the afternoon shift. Remember, while completing these tasks, you’ll also be accommodating live guests and responding to messages across platforms.</p>
-          <p>Good luck, and enjoy your shift!</p>
-        </div>
-      </details>
-    </section>
 
-    <section class="docSection" data-process-id="Graveyard Shift Tasks SOP" data-tags="Graveyard Shift Tasks SOP" data-title="Graveyard Shift Tasks SOP">
+      <details class="accordion" id="accordion-14-11"
+               data-title="Step-by-step checklist"
+               data-keywords="Afternoon Shift">
+		<summary>SOP</summary>
+	  <div class="card">
+		<p>Welcome back to this training! In this video, we’ll go over your duties for the afternoon shift.</p>
+		<p>The afternoon shift starts at either 3 PM or 4 PM Sydney Time. Before logging in, make sure all your tools are ready. Also, take a moment to review recent announcements, as there may be updates that affect your responsibilities as a receptionist.</p>
+		<p>Once you’re ready, send your login time to the “Staff clock in/out” group in Sydney Time.</p>
+		<p>After that, check the “HANDOVER (new)” group for any important endorsements from the previous receptionist.</p>
+		<p>After acknowledging the endorsement for your property, double-check all pending check-ins in the Check-ins File.</p>
+		<p>Next, verify if these guests have completed the digital check-in process in CloudBeds. Here’s how:</p>
+		  <ul>
+			  	<li>Search the guest’s name</li>
+			  	<li>Open Reservation Details</li>
+			  	<li>Go to Documents</li>
+			  		<ul>
+			  		<li>From here, you’ll see whether they have uploaded the necessary ID or have completed the process.</li>
+					</ul>
+		  </ul>
+		<p>Make any updates in the Check-ins File, if applicable.</p>
+		<p>For guests who have completed the check-in process, release their GOKI access by sending their check-in details.</p>
+		<p>Next, create a list of:</p>
+		  <ul>
+			  	<li>Empty Beds, and</li>
+			  	<li>Rooms/Beds of Pending Check-ins</li>
+		  </ul>
+		<p>Send this list to your property’s housekeeping group chat. Once the scheduled afternoon cleaner logs in, they will send it back to you to confirm if beds are made and ready for check-in, including for last-minute arrivals. You may follow the provided template for this list.</p>
+		<p>As you go through your shift, you'll also need to send a check-in reminder to guests who are checking in the next day. You can do this by copying the reservation name from CloudBeds, pasting it into Whistle, and sending the check-in reminder template. After that, update your list accordingly.</p>
+		<p>At the end of your shift, prepare and send an endorsement for the next receptionist. Send it to the “HANDOVER (new)” group before sending your log-out message to the “Staff clock in/out” group.</p>
+		<p>And that’s it! Those are the main tasks assigned to the afternoon shift. Remember, while completing these tasks, you’ll also be accommodating live guests and responding to messages across platforms.</p>
+		<p>Good luck, and enjoy your shift!</p>
+		  <div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1fwwv-L6O1WsNBdeIm-rv8mcMdoCyhPYh/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>
+		  
+	  </div>
+    </details>   
+</section>
+
+		  
+<section class="docSection" data-process-id="Graveyard Shift Tasks SOP" data-tags="Graveyard Shift Tasks SOP" data-title="Graveyard Shift Tasks SOP">
       <h2>Graveyard Shift Tasks SOP</h2>
-      <details class="accordion" id="shift-graveyard-sop" data-title="Graveyard Shift SOP" data-keywords="Graveyard Shift Tasks SOP">
-        <summary>SOP</summary>
-        <div class="card">
-          <p>The purpose of the graveyard shift is to keep overnight operations stable, maintain accurate reporting, monitor safety and systems, and ensure a smooth handover for the morning team.</p>
-          <p>At 11:00 PM and again at 11:55 PM, send all reservations to Morgan. This includes new, modified, and pending bookings. Make sure the Daily Report Stats Sheet is updated and the link is included. Take time to verify occupancy, check-ins, and availability before sending.</p>
-          <p>During the shift, send system and facility updates. This includes reporting the GOKI battery status and flagging any low battery warnings immediately. Internet speed test results should also be sent, with notes if the connection is unstable or slower than normal.</p>
-          <p>Check the number of empty beds at the Allen location and send the total to the Overnight Group, tagging overnight staff. This information helps the team manage walk-ins, transfers, and emergencies overnight.</p>
-          <p>Throughout the shift, continuously monitor guest complaints, CCTV feeds, and messaging platforms. Respond to issues within your scope, escalate urgent or safety-related concerns immediately, and log all incidents for the morning handover.</p>
-          <p>At 5:00 AM, send the check-in list for the day. Ensure all expected arrivals are listed and highlight any early check-ins or special notes the morning team should be aware of.</p>
-          <p>Before ending the shift, prepare a clear handover summary. This should include pending check-ins, unresolved complaints or incidents, any technical concerns such as GOKI, internet, or CCTV issues, and any follow-ups required by the morning team.</p>
-        </div>
-      </details>
-    </section>
 
-    <section class="docSection" data-process-id="Fire & Safety Surprise Visits" data-tags="Fire & Safety Surprise Visits" data-title="Fire & Safety Surprise Visits">
+      <details class="accordion" id="accordion-14-12"
+               data-title="Step-by-step checklist"
+               data-keywords="Graveyard Shift Tasks SOPs">
+		<summary>SOP</summary>
+	  <div class="card">
+		<p>The purpose of the graveyard shift is to keep overnight operations stable, maintain accurate reporting, monitor safety and systems, and ensure a smooth handover for the morning team.</p>
+		<p>At 11:00 PM and again at 11:55 PM, send all reservations to Morgan. This includes new, modified, and pending bookings.
+		Make sure the Daily Report Stats Sheet is updated and the link is included. Take time to verify occupancy, check-ins, and availability before sending.</p>
+		<p>During the shift, send system and facility updates. This includes reporting the GOKI battery status and flagging any low battery warnings immediately.
+		Internet speed test results should also be sent, with notes if the connection is unstable or slower than normal.</p>
+		<p>Check the number of empty beds at the Allen location and send the total to the Overnight Group, tagging overnight staff. This information helps the team manage walk-ins, transfers, and emergencies overnight</p>
+		<p>Throughout the shift, continuously monitor guest complaints, CCTV feeds, and messaging platforms. Respond to issues within your scope, escalate urgent or safety-related concerns immediately, and log all incidents for the morning handover.</p>
+		<p>At 5:00 AM, send the check-in list for the day. Ensure all expected arrivals are listed and highlight any early check-ins or special notes the morning team should be aware of.</p>
+		<p>Before ending the shift, prepare a clear handover summary. This should include pending check-ins, unresolved complaints or incidents, any technical concerns such as GOKI, internet, or CCTV issues, and any follow-ups required by the morning team.</p>
+		
+		  <div class="card">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+            <iframe
+              src="https://drive.google.com/file/d/1wRjuzcF2dy_7QFtgBo3w2HtLDOsDrPyI/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; encrypted-media"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+            </iframe>
+          </div>
+        </div>
+		  
+	  </div>
+    </details>   
+</section>
+
+<section class="docSection" data-process-id=" Fire & Safety Surprise Visits" data-tags=" Fire & Safety Surprise Visits" data-title=" Fire & Safety Surprise Visits">
       <h2>Fire & Safety Surprise Visits</h2>
-      <details class="accordion" id="fire-safety-visits" data-title="Fire & Safety Surprise Visits" data-keywords="Fire & Safety Surprise Visits">
-        <summary>Instruction</summary>
-        <div class="card">
-          <p>Based on legal requirements, Fire &amp; Safety inspections and Council inspections must be scheduled in advance.</p>
-          <ul>
-            <li>Politely advise that inspections must be pre-arranged and we cannot grant access at that time, out of respect for guest privacy and comfort.</li>
-            <li>Request that they return at a scheduled time once an appointment has been organized.</li>
-            <li>Escalate immediately to Rupert and advise that Rupert will escort the inspectors during the inspection once scheduled.</li>
-          </ul>
 
-          <p>When an inspection is scheduled and confirmed, reception may provide access only under the following conditions:</p>
-          <ul>
-            <li>Rupert must be present and escorting the inspectors at all times.</li>
-            <li>Reception may provide the required access (digital keys/entry) once Rupert confirms approval.</li>
-            <li>Inspectors are to conduct the inspection only—no unsupervised access to guest areas.</li>
-          </ul>
+      <details class="accordion" id="accordion-14-13"
+               data-title="Fire & Safety Surprise Visits"
+               data-keywords="Fire & Safety Surprise Visits">
+		<summary>Instruction</summary>
+	  <div class="card">
+		<h2>Fire & Safety Surprise Visits</h2>
+		<p>Based on legal requirements, Fire & Safety inspections and Council inspections must be scheduled in advance.</p>
+			<ul>
+				<li>Politely advise that inspections must be pre-arranged and we cannot grant access at that time, out of respect for guest privacy and comfort.</li>
+				<li>Request that they return at a scheduled time once an appointment has been organized.</li>
+				<li>Escalate immediately to Rupert and advise that Rupert will escort the inspectors during the inspection once scheduled.</li>
+			</ul>
+		
+		<p>When an inspection is scheduled and confirmed, reception may provide access only under the following conditions:</p>
+			<ul>
+				<li>Rupert must be present and escorting the inspectors at all times.</li>
+				<li>Reception may provide the required access (digital keys/entry) once Rupert confirms approval.</li>
+				<li>Inspectors are to conduct the inspection only—no unsupervised access to guest areas.</li>
+			</ul>
+		
+	<p><b>Important:</b> Do not provide room access or allow entry to guest areas for any unannounced inspection.</p>
+	<p><b>Rupert Piggin - +61413643885</b></p>
+		
+</section>
 
-          <p><b>Important:</b> Do not provide room access or allow entry to guest areas for any unannounced inspection.</p>
-          <p><b>Rupert Piggin - +61413643885</b></p>
-        </div>
-      </details>
-    </section>
-
-    <section class="docSection" data-process-id="Towels & Item Sales Protocol" data-tags="Towels & Item Sales Protocol" data-title="Towels & Item Sales Protocol">
+<section class="docSection" data-process-id="Towels & Item Sales Protocol" data-tags="Towels & Item Sales Protocol" data-title="Towels & Item Sales Protocol">
       <h2>Towels & Item Sales Protocol</h2>
-      <details class="accordion" id="towels-item-sales" data-title="Towels & Item Sales Protocol" data-keywords="Towels & Item Sales Protocol">
-        <summary>Instruction</summary>
-        <div class="card">
-          <h2>Towels &amp; Item Sales Protocol</h2>
 
-          <h3>Borrowing Towels – Allen</h3>
-          <ul>
-            <li>❌ No longer allowed</li>
-          </ul>
-
-          <h3>Items for Sale</h3>
-          <ul>
-            <li>Towel – $10</li>
-            <li>Padlock – $10</li>
-            <li>Laundry Pod – TBA</li>
-          </ul>
-
-          <p>Storage Locker Code: 596</p>
-
-          <h3>Handling Process</h3>
-          <ul>
-            <li>Send payment link</li>
-            <li>After payment, onsite staff retrieves item</li>
-            <li>❌ Guests must NOT receive locker code</li>
-          </ul>
-
-          <h3>Private Rooms</h3>
-          <ul>
-            <li>1 towel provided upon check-in</li>
-          </ul>
-
-          <h3>Rollout Status</h3>
-          <ul>
-            <li>Allen – Completed</li>
-            <li>Flinders, Central, PP – In progress</li>
-          </ul>
-        </div>
-      </details>
-    </section>
-
-  </main>
-</div>
+      <details class="accordion" id="accordion-14-14"
+               data-title="Towels & Item Sales Protocol"
+               data-keywords="Towels & Item Sales Protocol">
+		<summary>Instruction</summary>
+	  <div class="card">
+		<h2>Towels & Item Sales Protocol</h2>
+		<h3>Borrowing Towels – Allen</h3>
+			<ul>
+				<li>❌ No longer allowed</li>
+			</ul>
+		
+		<h3>Items for Sale</h3>
+			<ul>
+				<li>Towel – $10</li>
+				<li>Padlock – $10</li>
+				<li>Laundry Pod – TBA</li>
+			</ul>
+		<p>Storage Locker Code: 596</p>
+		<h3>Handling Process</h3>
+			<ul>
+				<li>Send payment link</li>
+				<li>After payment, onsite staff retrieves item</li>
+				<li>❌ Guests must NOT receive locker code</li>
+			</ul>
+		<h3>Handling Process</h3>
+			<ul>
+				<li>Send payment link</li>
+				<li>After payment, onsite staff retrieves item</li>
+				<li>❌ Guests must NOT receive locker code</li>
+			</ul>
+		<h3>Private Rooms</h3>
+			<ul>
+				<li>1 towel provided upon check-in</li>
+			</ul>
+		<h3>Private Rooms</h3>
+			<ul>
+				<li>Allen – Completed</li>
+				<i>Flinders, Central, PP – In progress</li>
+			</ul>
+	
+</section>
 
 <script src="app.js"></script>
 </body>
